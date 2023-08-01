@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-orientated-programming</title>
+</head>
+<body>
+    <h1>object-orientated-programming</h1>
+    <hr>
+
+    <ul id="ing"></ul>
+
+    <script>
+        var ingE = document.getElementById("ing");
+        var ingredients = ["flour","eggs","milk"];
+        var quantity = ["200g", "2","100ml"];
+        var method = ["Mix all the ingredients together in a bowl.","Heat pan.","Pour mixture into hot pan.","Flip pancake.","Serve."];
+        var images = "insert-image(s)";
+
+        var recipe = [ingredients, quantity, method, images]
+        
+        for (let ingI = 0; ingI < ingredients.length; ingI++) {
+            ingE.innerHTML = "<li>" + ingredients[ingI] + "</li>";
+            
+        }
+
+    </script>
+</body>
+</html>

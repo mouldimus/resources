@@ -1,0 +1,54 @@
+.captailise{
+    text-transform: capitalize;
+}
+.bg-blu-txt-wh{
+    background-color: blue;
+    color: white;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+a:hover, a:active{
+    color: white;
+    text-decoration-line: none;
+    background-color: blue;
+    border: 1px solid white;
+    display:contents
+}
+a:visited, a:link{
+    color: black;
+    text-decoration-line: none;
+}
+
+
+
+
+
+
+.hover_img a {
+    position: relative;
+}
+.hover_img a span{
+    position: absolute; 
+    z-index: 99;
+    display: none; 
+}
+.hover_img a:hover span{
+    display: block;
+}
+.floobs{
+    font-size: 50px;
+    color:black;
+    text-decoration: none;
+}
+body{
+    background-color: azure;
+    text-align: center;
+    align-content: center;
+}
+p{
+    width: 50%;
+    background-color: white;
+    padding: 10%;
+    text-align: center;
+}

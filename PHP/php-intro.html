@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how-php-works</title>
+    <script src="https://kit.fontawesome.com/09c3dcc289.js" crossorigin="anonymous"></script>
+    
+    
+    <style>
+        div{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            border: 1px solid #555;
+            position: relative;
+        }
+        p+div{
+            top: 17px;
+        }
+        div+i{
+            position: relative;
+        }
+        div+i>i{
+            position:absolute;
+            top: 30px;
+            right: 0px;
+        }
+        div+div{
+            bottom: 75px;
+            right: 130px;
+        }
+        div+div+i{
+            position: relative;
+            bottom: 20px;
+            right: 178px;
+
+        }
+        div+div+i>i{
+            position: absolute;
+            top: 0px;
+            left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>How php works</h1>
+    <hr>
+    <p>  When you go to a webpage on the internet you're essentially saying to the global network, "Hey, can you pass me this file, at this EXACT location?". Otherwise known as a URL. <br>
+    The server hosting that URL, then looks at the file you've requested, deciphers the code, then displays the webpage's content dependent on the answers to the code. <br>
+    php is a special bit of code that tells the server to retrieve content from the SQL database and replace the php code with content from the database dependent on the answer to the php code. 
+    </p>
+    <p>For example</p>
+    <div>Your browser</div>
+    <i class="fa fa-arrow-right">
+        <i class="fa fa-arrow-left"></i>
+    </i>
+   
+    <div>Server</div>
+    <i class="fa fa-arrow-right">
+        <i class="fa fa-arrow-left"></i>
+    </i>
+   
+
+    <div>Apache</div>
+    <i class="fa fa-arrow-right">
+        <i class="fa fa-arrow-left"></i>
+    </i>
+    
+
+    <div>PHP</div>
+    <i class="fa fa-arrow-right">
+        <i class="fa fa-arrow-left"></i>
+    </i>
+
+    <div>database</div>
+
+    <div>Files</div>
+    <i class="fa fa-arrow-up">
+        <i class="fa fa-arrow-down"></i>
+    </i>
+    
+
+
+
+
+</body>
+</html>

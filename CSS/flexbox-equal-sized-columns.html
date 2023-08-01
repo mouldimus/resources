@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox-equal-sized-columns</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      .parent {
+        display: flex;
+      }
+      .parent div {
+        flex-basis: 33%;
+        flex-shrink: 1;
+        flex-grow: 1;
+        border: 1px solid red;
+      }
+      .p1 .box1 {
+        flex-basis: 50%;
+        flex-shrink: 0;
+        background: blue;
+        color: #fff;
+      }
+      .p1 div {
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flexbox-equal-sized-columns</h1>
+    <hr />
+    <div class="parent">
+      <div>yellow</div>
+      <div>skdhjb</div>
+      <div>skdjbv</div>
+    </div>
+    <div class="parent p1">
+      <div class="box1">This will always be 50% width</div>
+      <div class="box2">These will shrink around it</div>
+      <div class="box3">These will shrink around it</div>
+    </div>
+    <div class="parent p2">
+      <div class="box1">jhv</div>
+      <div class="box2">jh</div>
+      <div class="box3">ljhv</div>
+    </div>
+    <div class="parent p2">
+      <div class="box1">jhv</div>
+      <div class="box2">kjhv</div>
+      <div class="box3">ljhv</div>
+    </div>
+    <div class="parent p4">
+      <div class="box1">ljhv</div>
+      <div class="box2">jhvv</div>
+      <div class="box3">jhv</div>
+    </div>
+    <div class="code-container">
+      <h3>For Example</h3>
+      <blockquote class="code">
+        .parent {<br />
+        display: flex;<br />
+        }<br /><br />
+        .parent div {<br />
+        flex-basis: 33%;<br />
+        flex-shrink: 1;<br />
+        flex-grow: 1;<br />
+        border: 1px solid red;<br />
+        }<br />
+      </blockquote>
+    </div>
+    <div class="code-container">
+      <h3>flex-basis</h3>
+      <blockquote class="code">flex-basis: 33%;</blockquote>
+    </div>
+    <p>This specifies what you would like the elements width to be.</p>
+    <div class="code-container">
+      <h3>flex-shrink</h3>
+      <blockquote class="code">flex-shrink: 1;</blockquote>
+    </div>
+    <p>This can be filled out by a 1/0, Yes/No or True/False.</p>
+    <p>It defines whether or not the element is allowed to shrink.</p>
+    <div class="code-container">
+      <h3>flex-grow</h3>
+      <blockquote class="code">flex-grow: 1;</blockquote>
+    </div>
+    <p>This can be filled out by a 1/0, Yes/No or True/False.</p>
+    <p>It defines whether or not the element is allowed to grow.</p>
+    <div class="code-container">
+      <h3>flex</h3>
+      <blockquote class="code">flex: 1 0 25%;</blockquote>
+    </div>
+    <p>flex is the shorthand for all three.</p>
+    <p>Syntax: none | [ 'flex-grow' 'flex-shrink' || 'flex-basis' ]</p>
+    <footer style="margin-top: 100px"></footer>
+  </body>
+</html>

@@ -1,0 +1,612 @@
+/*header start*/
+/*mini cart font size adjust*/
+#mini-cart {
+  font-size: 25px !important;
+}
+
+/* 	Getting rid of the "All Categories" tab from the search bar */
+#header
+  > div.header-main
+  > div.container
+  > div.header-center
+  > div.searchform-popup
+  > form
+  > fieldset
+  > span.text
+  + select.cat {
+  display: none;
+}
+/* Change "sale" in #header menu */
+/*start*/
+div.header-wrapper.wide.fixed-header
+  > #header
+  > div.header-main
+  > div.container
+  > div
+  > div
+  > div
+  > ul
+  > li.th-appearance-menus-main-menu-123-sale
+  > a {
+  color: red;
+  text-transform: uppercase;
+}
+
+div.header-wrapper.wide.fixed-header
+  > #header
+  > div.header-main
+  > div.container
+  > div
+  > div
+  > div
+  > ul
+  > li.th-appearance-menus-main-menu-123-sale
+  > a:hover,
+div.header-wrapper.wide.fixed-header
+  > #header
+  > div.header-main
+  > div.container
+  > div
+  > div
+  > div
+  > ul
+  > li.th-appearance-menus-main-menu-123-sale
+  > a:active {
+  color: white;
+}
+/*end*/
+
+/*header end*/
+
+/* layout start */
+/*layout end*/
+
+/* pages start */
+
+/*single product page start*/
+/*single product attribute label font adjust*/
+.single-product .variations .label label {
+  color: #121212;
+  font-weight: 600;
+}
+/*title and description padding*/
+.summary.entry-summary.col-lg-6 {
+  padding: 10px;
+}
+/*single product page end*/
+
+/*checkout start*/
+/*adjusting checkout margin start*/
+div#content > article > div.page-content > div.woocommerce {
+  margin: 10px !important;
+}
+/*adjusting checkout margin end*/
+/*checkout end*/
+
+/*homepage start*/
+div#main > div.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+/*remove margin from img carousel*/
+section
+  > div
+  > .vc_column_container
+  > div.wpb_wrapper
+  > div.wpb_images_carousel {
+  margin-bottom: 0;
+}
+
+.wpb_wrapper.vc_column-inner {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*text underline animation*/
+#sale-link-th > div > h2 > a {
+  text-decoration: none;
+  color: #111;
+  display: inline-block;
+}
+#sale-link-th > div > h2 > a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #000;
+  transition: 300ms all ease;
+}
+#sale-link-th > div > h2 > a:hover:after {
+  width: 100%;
+}
+/* asics banner responsiveness start */
+h3.home-banner-product-title {
+  color: #f0f0f0;
+}
+h3.home-banner-product-title + p,
+h3.home-banner-product-title + p + p {
+  color: #b0b0b0;
+}
+.home-shoe-banner {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.home-shoe-banner p.product.woocommerce.add_to_cart_inline {
+  display: inline-block;
+  background: #11111188;
+  color: #fff;
+}
+.home-shoe-banner .add-links-wrap,
+.home-shoe-banner .add-links.clearfix,
+.home-shoe-banner .viewcart-style-3,
+.home-shoe-banner .yith-wcwl-add-button,
+.home-shoe-banner .yith-wcwl-add-to-wishlist {
+  display: inline-block;
+}
+.home-shoe-banner a {
+  color: #c0c0c0;
+}
+.asics_gel_kayano_29_mobtitle {
+  display: none;
+}
+.asics_gel_kayano_29_mobtitle a {
+  text-shadow: 1px 1px 3px #ccc;
+}
+
+@media only screen and (max-width: 990px) {
+  .home-shoe-banner .home-banner-product-title + p,
+  .home-shoe-banner .home-banner-product-title + p + p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .home-shoe-banner {
+    display: none;
+  }
+  .asics_gel_kayano_29_mobtitle {
+    display: block;
+  }
+}
+/* asics banner responsiveness end */
+/*homepage end*/
+
+/* shop start */
+/*shop end*/
+
+/*password protected page*/
+.login-popup.page-id-20287 #content {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+/*pages end*/
+
+/*Main Content start*/
+
+/*filters start*/
+/*adjusting filter spacing start*/
+@media (min-width: 990px) {
+  .shop-loop-before {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .gridlist-toggle {
+    display: none !important;
+  }
+
+  .woocommerce-ordering {
+    display: flex;
+    margin: 0 !important;
+  }
+
+  .porto-product-filters.mobile-sidebar {
+    display: flex;
+  }
+
+  .berocket_single_filter_widget {
+    width: 250px;
+    margin: 5px;
+  }
+}
+
+h3.bapf_hascolarr {
+  margin: 16px 0;
+}
+
+.bapf_head {
+  margin-top: 5px;
+}
+
+div.bapf_body {
+  margin-top: 10px;
+}
+/*store notice start*/
+/* font re-sizing for store notice  */
+span.th-porto-customise-woocommerce-store-notice-smaller-text {
+  font-size: 0.8em;
+  position: relative;
+  right: 0;
+  left: 0;
+  font-weight: 100;
+  color: #dfdfdf;
+}
+
+span.th-porto-customise-woocommerce-store-notice-larger-text {
+  font-size: 1.4em;
+  left: 0;
+  right: 0;
+  position: relative;
+  font-weight: 400;
+}
+
+/* Changing store notice colour */
+body > div.cli-modal-backdrop.cli-fade.cli-popupbar-overlay + p.demo_store {
+  background: rgba(17, 17, 17, 0.5);
+}
+
+/* colouring the "dismiss link" */
+a.woocommerce-store-notice__dismiss-link {
+  color: #dfdfdf;
+  font-weight: 100;
+  float: right;
+  margin-right: 10px;
+  margin-left: -50px;
+}
+/*store notice end*/
+
+/*adjusting filter spacing end*/
+/*filters end*/
+
+/* footer start*/
+/*google review widget start*/
+.ti-widget-container.ti-col-3,
+.ti-footer,
+aside#block-21 {
+  margin: 0 !important;
+}
+
+.footer-top::before,
+.footer-top::after {
+  content: "";
+  background: #111;
+  width: 100%;
+  height: 10px;
+  display: block;
+}
+/*google review widget end*/
+/*footer end*/
+
+/*mitch start*/
+/* Search bar problems not displaying products correctly */
+#yith-ajaxsearchform > div {
+  flex-direction: column;
+}
+
+#header .header-main {
+  background-color: #111111;
+}
+
+.dashboard-title::before {
+  content: "Club Benefit";
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #111111;
+}
+
+body:not(.logged-in) .affilpay {
+  display: none !important;
+}
+
+body:not(.logged-in) .affilsettings {
+  display: none !important;
+}
+
+.woocommerce-privacy-policy-text {
+  padding-bottom: 20px;
+}
+
+.myaccount_user {
+  display: none;
+}
+
+.shop_table {
+  margin-bottom: 50px !important;
+}
+
+#nav-panel .accordion-menu .sub-menu li:not(.active):hover > a {
+  background-color: #ff5b5b;
+}
+
+#nav-panel .accordion-menu li.menu-item > a:hover {
+  background-color: #ff5b5b;
+}
+
+.page-id-2137 .back-login {
+  display: none;
+}
+
+.page-id-2137 .pt-right {
+  float: left !important;
+  background-color: #ff5b5b;
+  border-color: #ff5b5b;
+}
+
+.page-id-2137 .pt-right:hover {
+  float: left !important;
+  background-color: #000;
+  border-color: #000;
+}
+
+#header .dgwt-wcas-search-wrapp {
+  max-width: 300px;
+}
+
+/* standard search style */
+#header .searchform.searchform-cats input {
+  width: 266px;
+}
+
+#header .searchform input {
+  max-width: none;
+  width: 100%;
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 0;
+}
+
+#header .searchform .button-wrap {
+  position: sticky;
+  right: 30px;
+  top: 20px;
+}
+
+#header .searchform .text {
+  border-bottom: 0px solid #111111 !important;
+}
+
+#header .searchform .selectric-cat,
+#header .searchform .text {
+  border-bottom: 0px solid #111111 !important;
+}
+
+#header .searchform .btn {
+  font-size: 15px;
+}
+
+.sidebar-content {
+  margin-top: 50px !important;
+}
+
+.widget:first-child {
+  margin-top: 50px !important;
+}
+
+/*.porto-sticky-navbar .label {*/
+/*  display: none;        disabled 15/11/22*/
+/*}*/
+
+.fixed-header #header .header-top {
+  background-color: rgba(12, 12, 12, 0.8);
+  display: none;
+}
+
+#header.sticky-header .header-main.change-logo .logo .img {
+  transform: scale(1.1);
+}
+
+#header .searchform .searchform-fields {
+  border-color: #cccccc;
+}
+
+#header .searchform .searchform-fields {
+  border: 1px solid #eee;
+}
+
+#header .searchform .searchform-fields {
+  border-radius: 20px;
+}
+
+.product-layout-full_width .filter-item-list .filter-item {
+  color: #ffffff;
+}
+
+.filter-item-list .filter-item {
+  padding: 0;
+  border: 1px solid #e9e9e9;
+  display: block;
+  line-height: 24px;
+  padding: 0 8px;
+  margin: 3px 6px 3px 0;
+  min-width: 32px;
+  text-align: center;
+  font-size: 11px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #121212;
+}
+
+.filter-item-list .filter-item:not(.disabled):hover {
+  background-color: #a91818;
+  border-color: #a91818;
+}
+
+.product-layout-full_width .filter-item-list .filter-item {
+  color: #fff;
+  background-color: #121212;
+}
+
+.woocommerce-widget-layered-nav-list .chosen a:not(.filter-color),
+.filter-item-list .active .filter-item {
+  background-color: #a91818;
+  border-color: #a91818;
+  font-weight: 600;
+}
+
+/* theme.css:1:53788 */
+#header .searchform-popup .search-toggle {
+  width: 2em;
+  font-size: 1rem;
+}
+
+.vc_navbar .vc_icon-btn.porto-studio-editor-button {
+  display: none !important;
+}
+
+input[type="email"] {
+  background-color: #fff;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+/*section.cwginstock-subscribe-form ::placeholder {*/
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+/*  color: #a91818;*/
+/*  opacity: 1;*/
+/* Firefox */
+/*}*/
+
+/*section.cwginstock-subscribe-form :-ms-input-placeholder {          disabled 15/11/22*/
+/* Internet Explorer 10-11 */
+/*  color: #a91818;*/
+/*}*/
+
+/*section.cwginstock-subscribe-form ::-ms-input-placeholder {*/
+/* Microsoft Edge */
+/*  color: #a91818;*/
+/*}*/
+
+.product-image .stock {
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+
+.cwginstock-subscribe-form .panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+.cwginstock-subscribe-form .panel-primary {
+  border-color: #000000 !important;
+}
+
+#gdprbtn {
+  float: right;
+}
+
+.single-product .product_meta {
+  font-size: 10px !important;
+}
+
+.woocommerce-price-suffix {
+  font-size: 10px !important;
+}
+
+.wpm_gtin_code_wrapper {
+  display: none !important;
+}
+
+.sku_wrapper {
+  display: none !important;
+}
+
+#header .header-main #main-menu .mobilemenu {
+  display: none !important;
+}
+
+#nav-panel .accordion-menu .sub-menu {
+  text-transform: uppercase;
+}
+
+.mobile-sidebar .sidebar-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .fixed-header #header .header-main {
+    background: #000000;
+  }
+
+  wc-stripe-payment-request-button-separator {
+    display: none;
+  }
+
+  #nav-panel .accordion-menu li.menu-item > a,
+  #nav-panel .accordion-menu .arrow,
+  #nav-panel .menu-custom-block a {
+    color: #ffffff !important;
+  }
+
+  .shop-loop-before {
+    color: #222529;
+  }
+}
+
+@media (max-width: 1200px) {
+  .shop-loop-before {
+    color: #222529;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 21px;
+  }
+
+  .dgwt-wcas-search-wrapp {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  .shop-loop-before {
+    color: #222529;
+  }
+}
+
+@media (max-width: 480px) {
+  #header .searchform-popup {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 20px;
+  }
+
+  .shop-loop-before {
+    color: #222529;
+  }
+}
+
+/*Hide element on Desktop */
+@media only screen and (min-width: 981px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+/*Hide element on Tablet/Phone */
+@media only screen and (max-width: 980px) {
+  .hide-on-mobile-and-tablet {
+    display: none !important;
+  }
+}
+
+/*Make text bold */
+.text-bold {
+  font-weight: bold;
+}
+
+.text-bolder {
+  font-weight: 900;
+}
+
+/* rtl */

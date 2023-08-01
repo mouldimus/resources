@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  background-image: url(https://previews.123rf.com/images/neirfy/neirfy1612/neirfy161200036/69782834-old-blank-paper-on-pile-of-old-letters-with-feather-pen-retro-toned.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  max-height: 1300px;
+}
+
+nav {
+  border-bottom-width: 2px;
+  border-bottom-color: #ccc;
+  border-bottom-style: solid;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  font-weight: 600;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label, input, textarea, button {
+  display: block;
+  margin: 5px 24% 5px 18%;
+  font-family:cursive;
+  font-kerning: auto;
+  width: 70%;
+
+}
+input, textarea{
+  background-color: rgba(245, 245, 220, 0);
+  border: 1px solid rgba(128, 128, 128, 0.306);
+}
+
+button{
+  height: 40px;
+  background-color: rgb(198, 0, 0);
+  border: none;
+  border-radius: 5px;
+  color: rgb(239, 239, 239);
+  font-size: large;
+  border-radius: 400px;
+  width: fit-content;
+}
+button:hover{
+  background-color: rgb(46, 46, 255);
+  color: white;
+}
+form{
+  margin: 0 auto;
+}
+p{
+  margin: 0 5px 10%;
+}
+form{
+  /* border: 1px solid red; */
+  transform: rotate(8.7deg);
+  margin: 5px 22% 5px 20%;
+}

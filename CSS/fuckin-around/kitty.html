@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kitty</title>
+    <style>
+      body {
+        background: linear-gradient(#333, #aaa);
+        height: 1000px;
+      }
+      div {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+      }
+      .box1 {
+        left: 0;
+        top: 0;
+        background: #111;
+        border-radius: 50%;
+        box-shadow: inset 3px 1px 5px #777;
+        animation: move1 5s ease infinite alternate forwards;
+      }
+      @keyframes move1 {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 0;
+          left: calc(100% - 150px);
+        }
+        50% {
+          top: calc(100% - 150px);
+          left: calc(100% - 150px);
+        }
+      }
+      .box2 {
+        left: calc(100% - 150px);
+        top: 0;
+        background: #00a;
+        border-radius: 50% 0;
+        box-shadow: inset 1px 1px 5px #003;
+        transform: rotateZ(-45deg);
+        animation: move1 5s ease infinite alternate forwards;
+      }
+      @keyframes move2 {
+        0% {
+          top: 0;
+          left: calc(100% - 150px);
+        }
+        25% {
+          top: 0;
+          left: 0;
+        }
+        50% {
+          top: calc(100% - 150px);
+          left: calc(100% - 150px);
+        }
+      }
+      .box3 {
+        left: calc(100% - 150px);
+        top: calc(100% - 150px);
+        background: linear-gradient(#a00, #0a0);
+        box-shadow: 4px 5px 5px #000;
+        transform: rotateX(30deg) rotateY(-20deg);
+        animation: move1 5s ease infinite alternate forwards;
+      }
+      @keyframes move1 {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 0;
+          left: calc(100% - 150px);
+        }
+        50% {
+          top: calc(100% - 150px);
+          left: calc(100% - 150px);
+        }
+      }
+      .box4 {
+        left: 0;
+        top: calc(100% - 150px);
+        background: #505;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px #202;
+        animation: move1 5s ease infinite alternate forwards;
+      }
+      @keyframes move1 {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 0;
+          left: calc(100% - 150px);
+        }
+        50% {
+          top: calc(100% - 150px);
+          left: calc(100% - 150px);
+        }
+      }
+      .box5 {
+        top: 50%;
+        left: 50%;
+        background: #737345;
+        box-shadow: inset 10px 10px 0 #800;
+        animation: move1 5s ease infinite alternate forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+  </body>
+</html>

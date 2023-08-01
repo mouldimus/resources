@@ -1,0 +1,8 @@
+adduser
+Guess what, this adds a user
+adduser username
+
+which
+This tells you what bin directory the command is being used from
+for example
+which ls

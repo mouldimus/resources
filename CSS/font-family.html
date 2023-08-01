@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-family</title>
+    <!-- insert custom font link here -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .serif{
+            font-family: 'Times New Roman';
+            font-family: georgia;
+            font-family: palatino;
+            font-family: baskerville;
+        }
+        .sans-serif{
+            font-family: helvetica;
+            font-family: 'arial black';
+            font-family: verdana;
+            font-family: tahoma;
+            font-family: impact;
+            /* two worded fonts need to be surrounded by apostrophe's */
+            font-family: 'Trebuchet MS';
+            font-family: arial;
+            font-family: 'gill sans';
+            /* custom font can also be inserted, at the detriment of load time */
+            font-family: 'open sans';
+        }
+        .monospace{
+            font-family: courier;
+            font-family: lucida;
+            font-family: monaco;
+        }
+        .cursive{
+            font-family: 'bradley hand';
+            font-family: 'brush script mt';
+            font-family: 'comic sans ms'
+        }
+        .fantasy{
+            font-family: luminari;
+        }
+        .MS{
+            font-family: 'comic sans ms';
+            font-family: 'trebuchet ms';
+        }
+        #sans-serif-i{
+            font-style:italic;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>font-family</h1>
+    <h2 class="serif">Serif</h2>
+    <p class="serif">Serif fonts are often used for longer bits of text like articles, because the little ticks help you keep focused.<br>
+        These fonts contain serifs — small decorative strokes that protrude from the main body of the letter. Serif fonts are easier to read in physical, printed formats, as the serifs lead the viewer’s eyes from character to character. Times New Roman is a serif font.</p>
+    <h2 class="sans-serif" id="sans-serif-i">Sans-serif</h2>
+    <p class="sans-serif">Sans-serif fonts are often used for everything else, because it looks better.</p>
+    <h2 class="monospace">Monospace</h2>
+    <p class="monospace">This term refers to fonts that have equal spacing between characters. Courier is a monospace font.</p>
+    <h2 class="cursive">Cursive</h2>
+    <p class="cursive">These fonts resemble handwriting. Brush Script MT is a cursive font.</p>
+    <h2 class="fantasy">Fantasy</h2>
+    <p class="fantasy">Fantasy fonts are highly stylized decorative fonts. Luminari is a fantasy font.    </p>
+    <h2 class="MS">MS</h2>
+    <p class="MS">The MS in font names stands for Microsoft. It shows that Microsoft created this font for its digital devices. Trebuchet MS is an example.</p>
+
+</body>
+</html>

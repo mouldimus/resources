@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus-selector</title>
+    <style>
+        input{
+            color: #777;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 50px;
+        }
+        input:focus{
+            outline-color: red;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>focus-selector</h1>
+    <hr>
+    <form action="">
+        <label for="firstName">First Name</label>
+        <div>
+            <input type="text" name="firstName" id="">
+        </div>
+        <label for="lastName">Last Name</label>
+        <div>
+            <input type="text" name="lastName" id="">
+        </div>
+    </form>
+    <p>The <b>:focus</b> selector changes the styling of the html element selected by the user. Commonly used to "focus" elements when they're selected and "blurr" elements when they're unselected.</p>
+</body>
+</html>

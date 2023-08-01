@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation-iteration-count</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        background: #000;
+        margin: 0 auto;
+        animation: blinking 1s 2 forwards;
+      }
+      @keyframes blinking {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>animation-iteration-count</h1>
+    <hr />
+    <div class="box"></div>
+  </body>
+</html>

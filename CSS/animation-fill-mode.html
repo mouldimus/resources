@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation-fill-mode</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      .box {
+        width: 15px;
+        height: 15px;
+        background: #000;
+        margin: 0 auto;
+        animation: resizeBox 4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      }
+      @keyframes resizeBox {
+        0% {
+          width: 15px;
+          height: 15px;
+          background: #000;
+        }
+        25% {
+          transform: rotateZ(180deg);
+        }
+        50% {
+          width: 150px;
+          height: 150px;
+          background: red;
+        }
+        100% {
+          width: 100%;
+          height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>animation-fill-mode</h1>
+    <hr />
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

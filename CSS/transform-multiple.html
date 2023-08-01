@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="roboto.css" />
+    <title>transform-multiple</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        background: #000;
+        margin: 50px auto;
+        transition: 325ms all ease-in-out;
+      }
+      .box:hover {
+        transform: scale(2) translate(20px, 20px) skew(5deg);
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>transform-multiple</h1>
+    <hr />
+    <p>
+      To add multiple tansformations to an element or element state just add the
+      next transformations in with it.
+    </p>
+    <p>
+      Make sure not to add commas inbetween the transformation attributes. They
+      are not are applied in no particular order, not in a list.
+    </p>
+    <p>
+      side note: comma seperators in CSS stand mean they are in an order list,
+      and with out means they are in an unordered list.
+    </p>
+    <div class="code-container">
+      <h3>Example</h3>
+      <blockquote class="code">
+        transform: scale(2) translate(20px, 20px) skew(5deg);
+      </blockquote>
+    </div>
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniProject2</title>
+</head>
+<body>
+    <h1>miniProject2</h1>
+    <hr>
+
+
+<div id="url"></div>
+
+
+    <script>
+        var url = document.getElementById("url");
+
+        var urlBox = prompt("What URL would you like to visit?");
+        var urlLower = urlBox.toLowerCase();
+        var urlFirst8 = urlLower.substr(0,8);
+
+        if(urlFirst8 == "https://"){
+            url.innerHTML = "<a href=" + urlLower + ">" + urlLower + "</a>";
+        }
+        else{
+            url.innerHTML = "<a href=https://" + urlLower + ">" + urlLower + "</a>";
+        }
+        
+        
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportStore Blog</title>
+    <style>
+        table{
+            width: 100%;
+        }        
+        nav, footer{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .nav:hover, nav:active{
+            color: white;
+        }
+        .nav{
+            color:rgb(208, 208, 208);
+            text-decoration: none;
+        }
+        input, label{
+            margin-left: 5px;
+            padding: 5px;
+            width: 70%;
+        }
+        input{
+            border: 1px solid rgb(77, 136, 255);
+            border-radius: 5px;
+            margin-bottom: 5px;
+
+        }
+        button{
+            margin: 5px;
+            margin-top: 10px;
+            padding: 5px;
+            width: 76%;
+            background-color: blue; 
+            color: white; 
+            border: none; 
+            border-radius: 5px
+        }
+        p{
+            margin-left: 12px;
+        }
+        footer{
+            padding: 20px;
+            padding-top: 50px;
+        }  
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>SportStore Blog</h1>
+        <a class="nav"href="#">Home</a>
+        &nbsp; &nbsp; &nbsp;
+        <a class="nav"href="blog.html">Blog</a>
+        &nbsp; &nbsp; &nbsp;
+
+        <a class="nav"href="contact.html">Contact Us</a>
+
+    </nav>
+
+    <main>
+        <table style="border-spacing: 0;">
+            <tr>
+                <!-- Blog start -->
+                <td width="60%" style="padding-left: 5px;">
+                    <h4>Blog header 1</h4>
+                    <img src="images/boobs.webp" alt="" width="50%">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni officia illo, assumenda voluptates tempore sequi commodi autem rem possimus quam.</p>
+                    <a href="Blog1.html">Read more</a>
+                    <hr>
+                    <h4>Blog header 2</h4>
+                    <video controls width="50%">
+                        <source src="vids/GX010388.MP4">
+                    </video>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni officia illo, assumenda voluptates tempore sequi commodi autem rem possimus quam.</p>
+                    <a href="Blog2.html">Read more</a>
+                    <hr>
+                    <h4>Blog header 3</h4>
+                    <audio controls>
+                        <source src="audio/gotchaBitch.mp3" type="audio/mp3">
+                    </audio>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni officia illo, assumenda voluptates tempore sequi commodi autem rem possimus quam.</p>
+                    <a href="Blog3.html">Read more</a>
+                    <hr>
+                </td>
+                <!-- Blog end -->
+                <aside>
+                    <td style="margin:0; padding:5px;vertical-align: top; background-color: rgb(223, 223, 223);">
+                        <form method="get" action="">
+                            <h3 style="margin-left: 8px;">Subscribe to our blog!</h3>
+                            <div><label for="firstName">First Name</label></div>
+                            <div><input type="text" name="firstName" id="" placeholder="First Name"></div>
+                            <div><label for="lastName">Last Name</label></div>
+                            <div><input type="text" name="lastName" id="" placeholder="Last Name"></div>
+                            <div><label for="email">Email Address</label></div>
+                            <div><input type="email" name="email" id="" placeholder="Email Address"></div>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </td>
+                </aside>
+                
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <a class="nav" href="sitemap">Sitemap</a>
+        &nbsp; &nbsp; &nbsp;
+        <a class="nav" href="tandcs.html">Terms and conditions</a>
+        &nbsp; &nbsp; &nbsp;
+        <a class="nav" href="facebook.html">Facebook</a>
+        &nbsp; &nbsp; &nbsp;
+        <a class="nav" href="twitter.html">Twitter</a>
+        <br>
+        <br>
+        <div style="text-align: right;">
+            <small>
+                &copy;Thomas Hayward
+            </small>
+        </div>
+    
+    </footer>
+</body>
+</html>

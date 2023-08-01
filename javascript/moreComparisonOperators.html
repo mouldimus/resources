@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+</head>
+<body>
+    <h1 id="header"></h1>
+    <hr>
+    <ul>
+        <li>!= is not</li>
+        <li>&gt;= greater than or equal to</li>
+        <li>&gt; greater than</li>
+        <li>&lt; less than</li>
+        <li>&lt;= less than or qual to</li>
+        <li>=== strict comparison</li>
+    </ul>
+
+    <script>
+
+        var passwd = "passwd123";
+        var letUserIn = null;
+
+// != is not operator
+        if(passwd != "passwd123"){
+            //keep user out the site
+            letUserIn = false;
+        }else{
+            //let user in
+            letUserIn = true;
+        }
+
+        var age = 18;
+
+// >= greater than or equal to operator
+        if(age >= 18){
+            letUserIn = true;//let user in
+        }else{
+            letUserIn = false;//keep user out
+        }
+
+
+// > greater than operator
+        if(age > 18){
+            letUserIn = true;//let user in
+        }else{
+            letUserIn = false;//keep user out
+        }
+
+        var canRetire = null;
+
+// < less than operator 
+        if(age < 60){
+            canRetire = false;//person cannot retire
+        }else{
+            canRetire = true;//person can retire
+        }
+
+        var height = 150
+        var allowedOnKidsPlaypark = null;
+//less than or equal to 
+        if(height <= 120){
+            allowedOnKidsPlaypark = true;//The person was allowed in, they were 120cm or smaller
+        }else{
+            allowedOnKidsPlaypark = false;//The person trying to enter was too tall, they were not 120cm or smaller
+        }
+
+        var order = "Coffee";
+        var isHacking = null;
+
+//type and value comparison
+        //this is faster as the js has to do less work
+        if(order === "Coffee"){
+            isHacking = true; //the order is a string and it is Coffee 
+        }else{
+            isHacking = false;//the order is either not a string or it doesn't say Coffee
+        }
+
+        
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multipleOperators</title>
+</head>
+<body>
+    <h1>multipleOperators</h1>
+    <hr>
+
+
+    <script>
+        var name = prompt("What is your name?");
+
+
+
+
+        // the worst way of nesting
+        // very difficult to read
+        if(name == "Thomas"){
+            console.log("Welcome back " + name);
+        } else{
+            if(name == "Cat"){
+                console.log("Meow " + name);
+            }else{
+                if(name == "Ben"){
+                    console.log("Fuck off " + name + "!");
+                }else{
+                    console.warn("Incorrect name");  
+                }
+            }
+        }
+        
+        
+        // else if nesting
+        // a little easier to read
+        // more compact
+        if(name == "Thomas"){
+            console.log("Welcome back " + name);
+        } else if(name == "Cat"){
+            console.log("Meow " + name);
+        }else if(name == "Ben"){
+            console.log("Fuck off " + name + "!");
+        } else{
+            console.warn("Incorrect name");  
+        }
+
+        // then there's switch
+        // default meaning if it's not any of these, do this
+        // case meaning if this, do that
+        // and break meaning next statement
+
+        switch(name){
+            case "Thomas":
+                console.log("Welcome back " + name);
+                break;
+            case "Cat":
+                console.log("Meow " + name);
+                break;
+            case "Ben":
+                console.log("Fuck off " + name + "!");
+                break;
+            default:
+                console.warn("Command not found");
+                break;
+        }
+    </script>
+</body>
+</html>

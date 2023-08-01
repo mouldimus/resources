@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transiton-delay</title>
+    <link rel="stylesheet" href="roboto.css">
+    <style>
+        .parent{
+            background: #000;
+            height: 50px;
+            position: relative;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: xx-large;
+        }
+        .child{
+            position:absolute;
+            height: 50px;
+            width: 50px;
+            background: #00ff00;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+
+        }
+        .parent:hover .child1{
+            left: calc(100% - 50px);
+        }
+        .child1{
+            transition: 1.5s left ease 2s;
+        }
+        .parent:hover .child2{
+            left: calc(100% - 50px);
+        }
+        .child2{
+            transition: 1.5s left ease-in;
+        }
+        .parent:hover .child3{
+            left: calc(100% - 50px);
+        }
+        .child3{
+            transition: 1.5s left ease-out;
+        }
+        .parent:hover .child4{
+            left: calc(100% - 50px);
+        }
+        .child4{
+            transition: 1.5s left ease-in-out;
+        }
+        .parent:hover .child5{
+            left: calc(100% - 50px);
+        }
+        .child5{
+            transition: 1.5s left cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .parent:hover .child6{
+            left: calc(100% - 50px);
+        }
+        .child6{
+            transition: 1.5s left cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .parent:hover .child7{
+            left: calc(100% - 50px);
+        }
+        .child7{
+            transition: 1.5s left cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .parent:hover .child8{
+            left: calc(100% - 50px);
+        }
+        .child8{
+            transition: 1.5s left cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .parent:hover .child9{
+            left: calc(100% - 50px);
+        }
+        .child9{
+            transition: 1.5s left cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+        .parent:hover .child10{
+            left: calc(100% - 50px);
+        }
+        .child10{
+            transition: 1.5s left cubic-bezier(0.23, 1, 0.320, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1>transiton-delay</h1>
+    <hr>
+    <p>So first things first we need to create something to animate.</p>
+    <p>Now, it's fckin transition delay time baby!!!!</p>
+    <p>To do this is simple. Just add the amount of time in the 4th position of the transition property.</p>
+    <div class="code-container"><h3>Example</h3>
+    <blockquote class="code">.child{transition: 325ms left ease 2s;</blockquote></div>
+
+    <div class="parent">ease (delayed 2s)
+        <div class="child child1"></div>
+    </div>
+    <div class="parent">ease-in
+        <div class="child child2"></div>
+    </div>
+    <div class="parent">ease-out
+        <div class="child child3"></div>
+    </div>
+    <div class="parent">ease-in-out
+        <div class="child child4"></div>
+    </div>
+    <div class="parent">cubic-bezier(0.19, 1, 0.22, 1)
+        <div class="child child5"></div>
+    </div>
+    <div class="parent">cubic-bezier(0.165, 0.84, 0.44, 1)
+        <div class="child child6"></div>
+    </div>
+    <div class="parent">cubic-bezier(0.175, 0.885, 0.32, 1.275)
+        <div class="child child7"></div>
+    </div>
+    <div class="parent">cubic-bezier(0.19, 1, 0.22, 1)
+        <div class="child child8"></div>
+    </div>
+    <div class="parent">cubic-bezier(0.215, 0.610, 0.355, 1)
+        <div class="child child9"></div>
+    </div>
+    <div class="parent">cubic-bezier(0.23, 1, 0.320, 1)
+        <div class="child child10"></div>
+    </div>
+    <div class="code-container">
+        <h3>Example</h3>
+        <blockquote class="code">
+            .parent{<br>
+                background: #000;<br>
+                height: 50px;<br>
+                position: relative;<br>
+            }<br>
+            .child{<br>
+                position:absolute;<br>
+                height: 50px;<br>
+                width: 50px;<br>
+                background: #00ff00;<br>
+                top: 0;<br>
+                left: 0;<br>
+                transition: 1.5s left ease;
+    <br>
+    <br>
+            }<br>
+            .parent:hover .child{<br>
+                left: calc(100% - 50px);<br>
+            }<br>
+        </blockquote>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box-sizing</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      .box {
+        border: 1px solid #000;
+        margin: 50px 0;
+        width: 300px;
+        padding: 20px;
+        background-color: #999;
+      }
+      .box1 {
+        box-sizing: content-box;
+        background-origin: content-box;
+      }
+      .box2 {
+        box-sizing: border-box;
+        background-origin: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>box-sizing</h1>
+    <hr />
+    <p>
+      So box-sizing is a way to change how the browser calculates the size of
+      the box.
+    </p>
+    <ul>
+      Either from the
+      <li>inside</li>
+      <li>outside</li>
+    </ul>
+
+    <div class="box box1">
+      So box-sizing: content-box; measures the box width from the inside of the
+      box, normally called the content box.
+    </div>
+    <div class="box box2">
+      Whereas box-sizing: border-box; measures the box width and height from the
+      outside, otherwise called the border box.
+    </div>
+    <div class="code-container">
+      <h3>For Example</h3>
+      <blockquote class="code">
+        .box {<br />
+        border: 1px solid #000;<br />
+        margin: 50px 0;<br />
+        width: 300px;<br />
+        padding: 20px;<br />
+        background-color: #999;<br />
+        }<br />
+        .box1 {<br />
+        box-sizing: content-box;<br />
+        background-origin: content-box;<br />
+        }<br />
+        .box2 {<br />
+        box-sizing: border-box;<br />
+        background-origin: border-box;<br />
+        }<br />
+      </blockquote>
+    </div>
+  </body>
+</html>

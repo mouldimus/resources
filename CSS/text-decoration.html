@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <style>
+        span{
+            text-decoration: line-through;
+            text-decoration-color: blue;
+            text-decoration-style: dashed;
+            color: red;
+            text-transform:uppercase;
+            text-transform:uppercase;
+        }
+        p.indent{
+            text-indent: 20px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            word-spacing: 1em;
+        }
+        .direction{
+            direction:rtl;
+            width: 100%;
+            padding: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+   <p> This text is <span>underlined!</span></p>
+   <p class="indent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam velit praesentium exercitationem dolore laudantium vero! Adipisci quos nulla sunt! Voluptatum assumenda magni sit temporibus enim accusamus sequi. Explicabo, a dicta?</p>
+   <input type="text" class="direction" placeholder="Right to Left instead of Left to Right. Weird.">
+</body>
+</html>

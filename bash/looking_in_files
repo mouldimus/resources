@@ -1,0 +1,4 @@
+cat = concatinate
+
+cat filename
+This command looks inside the specified file and prints it's contents in the terminal 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>miniProject1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>miniProject1</h1>
+    <hr />
+    <ol>
+      <li>
+        Create a script to concatinate variables into an html using
+        .getElementId and .innerHTML
+      </li>
+    </ol>
+
+    <p id="test">Hi, my name is ___ ___, I'm ___ and I'm _____</p>
+
+    <script>
+      var firstName = "Thomas";
+      var lastName = "Hayward";
+      var age = 23;
+      var occ = "learning to code";
+
+      var test = document.getElementById("test");
+
+      test.innerHTML =
+        "Hi, my name is " +
+        firstName +
+        " " +
+        lastName +
+        ", I'm " +
+        age +
+        " and I'm " +
+        occ;
+
+      console.table(
+        "firstName: ",
+        firstName,
+        "lastName: ",
+        lastName,
+        "age: ",
+        age,
+        "occ: ",
+        age
+      );
+    </script>
+  </body>
+</html>

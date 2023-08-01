@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation-mini-project</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      .box {
+        width: 50px;
+        height: 50px;
+        background: orange;
+        position: absolute;
+        animation: swim 4s ease 0s 3 alternate forwards;
+      }
+      .container {
+        width: 100%;
+        height: 1000px;
+        background: blue;
+        position: relative;
+      }
+      @keyframes swim {
+        0% {
+          left: 0;
+          top: 0;
+        }
+        25% {
+          left: calc(100% - 50px);
+          top: 0;
+        }
+        50% {
+          left: calc(100% - 50px);
+          top: calc(100% - 50px);
+        }
+        75% {
+          left: 0;
+          top: calc(100% - 50px);
+        }
+        100% {
+          left: 0;
+          top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>animation-mini-project</h1>
+    <hr />
+    <p>
+      In this project all we had to do was make a box move around its container,
+      corner to corner.
+    </p>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+    <p>Here's how I did it:</p>
+    <div class="code-container">
+      <h3>Example</h3>
+      <blockquote class="code">
+        .box {<br />
+        width: 50px;<br />
+        height: 50px;<br />
+        background: orange;<br />
+        position: absolute;<br />
+        animation: swim 4s ease 0s 3 alternate forwards;<br />
+        }<br />
+        .container {<br />
+        width: 100%;<br />
+        height: 1000px;<br />
+        background: blue;<br />
+        position: relative;<br />
+        }<br />
+        @keyframes swim {<br />
+        0% {<br />
+        left: 0;<br />
+        top: 0;<br />
+        }<br />
+        25% {<br />
+        left: calc(100% - 50px);<br />
+        top: 0;<br />
+        }<br />
+        50% {<br />
+        left: calc(100% - 50px);<br />
+        top: calc(100% - 50px);<br />
+        }<br />
+        75% {<br />
+        left: 0;<br />
+        top: calc(100% - 50px);<br />
+        }<br />
+        100% {<br />
+        left: 0;<br />
+        top: 0;<br />
+        }<br />
+        }<br />
+        <br />
+      </blockquote>
+    </div>
+  </body>
+</html>

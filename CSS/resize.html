@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resize</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      textarea {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #000;
+        resize: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>resize</h1>
+    <hr />
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <p>
+      resize is way to control the way you can resize this textarea in your
+      browser
+    </p>
+    <div class="code-container">
+      <h3>Here's how to do it</h3>
+      <blockquote class="code">
+        // you can only resize horizontally<br />
+        textarea{resize: horizontal;} <br />
+        <br />
+        textarea{resize: vertical;}<br />
+        // you can only resize vertically<br />
+        <br />
+        // you can resize both ways<br />
+        textare{resize: both;}(default) <br />
+        <br />
+        // you cannot resize <br />
+        textarea{resize: none;}
+        <br />
+      </blockquote>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starts-with-selector</title>
+    <style>
+        form{
+            border: 1px solid #cecece;
+            padding: 20px;
+
+        }
+        label{
+            font-weight: bold;
+        }
+        label,input{
+            display: block;
+            width: 50%;
+            margin-top: 5px;
+            padding: 5px;
+            
+        }
+        button{
+            margin-top: 10px;
+            padding: 5px 10px;
+            width: 25%;
+            background-color: rgb(0, 101, 224);
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(0, 109, 243);
+        }
+
+        [href^="/benefits"]{
+            text-decoration: none;
+            color: black;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>starts-with-selector</h1>
+    <hr>
+    <form action="">
+        <label for="firstName">First name</label>
+        <input type="text" placeholder="First name" name="firstName" id="">
+        <label for="lastName">Last name</label>
+        <input type="text" placeholder="Last name" name="lastName" id="">
+        <label for="email">Email address</label>
+        <div style="width:10px; height:10px" title="Don't worry we won't sell your email"></div>
+        <input type="email" name="email" placeholder="Email address" id="">
+        <button type="submit">Submit</button>
+        <a href="/benefits.pdf">Benefits.pdf</a>
+        <a href="/register">Register</a>
+    </form>
+<p>Using the ^= symbols you can aslo select elements by searching what the attribute value starts with.</p>
+
+</body>
+</html>

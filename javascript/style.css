@@ -1,0 +1,14 @@
+.js {
+  background: #222;
+  color: rgb(255, 233, 155);
+  font-family: monospace;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 20px solid #444;
+}
+.js::before {
+  content: "<script>";
+}
+.js::after {
+  content: "</script>";
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-align-last</title>
+    <style>
+        p{
+            text-align: justify;
+            text-align-last: justify;
+            padding: 10px;
+        }
+        blockquote{
+            background-color: black;
+            color:#00ff00;
+            font-family: monospace;
+            border-left: 10px solid #00ff00;
+            border-radius: 10px 0 0 10px;
+            padding: 10px 2px;
+        }
+        div{
+            background-color: #ccccdd;
+            padding: 10px 10px 10px 20px;
+            border-radius: 10px;
+        }
+        div>h3{
+            font-family: sans-serif;
+        }
+        hr+p{
+            text-align: unset;
+            text-align-last: unset;
+        }
+        i{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>text-align-last</h1>
+    <hr>
+    <p>So the text-align-last attribute aligns the <i>last</i> line of text.</p>
+    <div>
+        <h3>Example</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolore voluptatibus harum soluta error ex incidunt beatae ipsa magnam doloremque nisi explicabo consequuntur amet, dolor mollitia possimus illo sequi magni fugiat quis accusantium, sapiente atque quia. Quae velit dolorem ex explicabo tempore dolor maxime repellat! </p>
+        <blockquote>p{<br> text-align: justify; <br> text-align-last: justify; <br>}</blockquote>
+    </div>
+</body>
+</html>

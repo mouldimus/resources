@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox-verical-alignment</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      .box {
+        background: #000;
+        color: #fff;
+
+        height: 180px;
+        width: 180px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        transition: 1s all ease-in-out;
+      }
+      .box:hover {
+        box-shadow: 3px 3px 3px #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flexbox-verical-alignment</h1>
+    <hr />
+    <p>
+      So to vertically center the content within an element, previously you
+      would have to add all sorts of code to accomplish this, but with
+      <i>flex</i> you can reduce this down <i>significantly</i>.
+    </p>
+
+    <div class="box">stuff in box</div>
+    <div class="code-container">
+      <h3>Here's how</h3>
+      <blockquote class="code">
+        .box{<br />display: flex;<br /><br />//This changes the direction of the
+        content from row to column, so that justify content can be used to
+        center the content<br /><br />flex-direction: column;<br /><br />justify-content:
+        center;<br /><br />
+      </blockquote>
+    </div>
+  </body>
+</html>

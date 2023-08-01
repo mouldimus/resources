@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+</head>
+<body>
+    <h1 id="header"></h1>
+    <hr>
+    
+
+    <script>
+        // give the function a name     and some parameters
+        function name(parameter1,parameter2="default value"){
+            //perform some actions
+            console.log("Perform repeatable action using parameters: " + parameter1);
+            console.log("para1 + para2 = " + parameter1 + parameter2);
+
+
+            //return a value based on the function
+            return parameter1 * parameter2;//code from this point in the function will no longer work
+        }
+        var functionAnswer1 = name(365,"Go fuck yourself");
+        var functionAnswer2 = name("Suck my big fat hairy balls", true);
+        var functionAnswer3 = name(876,123);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

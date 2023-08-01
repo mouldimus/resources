@@ -1,0 +1,32 @@
+
+root directory = the first parent directory on the computer
+users directory = the "Users" directory
+home directory = the first directory after the users directory. basically where most user files are like:
+- documents
+- images
+- music
+- video
+- etc
+
+using the terminal you need to be able to navigate through the directory
+here are a couple of useful commands for that:
+- pwd = Print Working Directory - i.e. display the current pathname of your directory - i.e. /users/mouldimus/documents/personal/
+- cd = Change Directory - i.e move from one directory to the other
+- ls = List - i.e list items in your current directory
+
+here are some shortcuts to get to useful places:
+- cd / - takes you to your root directory
+- cd ~ - takes you to your home directory
+- while typing use the "TAB" key to autofill 
+- cd .. - will always take you UP one directory
+
+whoami
+This file tells the you what user you're currently logged in as
+
+sudo commandName commandInput
+This command essentially gives you temp admin user permissions
+ 
+
+ps
+Process Status
+Print what shell(Command language) the computer is currently using

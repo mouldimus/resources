@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+</head>
+<body>
+    <h1 id="header"></h1>
+    <hr>
+    <small></small>
+    <h2 class="red">Change this text
+        <small>Change this text!</small>
+    </h2>
+    <a href="#">Change this links color!</a>
+
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+        <li>List item 5</li>
+        <li>List item 6</li>
+        <li>List item 7</li>
+        <li>List item 8</li>
+        <li>List item 9</li>
+        <li>List item 10</li>
+    </ul>
+
+    <input type="text" name="stuff" id="blah" style="border:blue 1px solid; border-radius:10px; font-size:30px;" value="suck ma nan">
+    <script>
+     //note: this'll only select the FIRST element 
+        //      on the page with the className ".red"
+        var red = document.querySelector(".red");
+        red.innerHTML = "This h2 has been changed using a class selector!!<small></small>"
+
+    //note: You can also select elements with it too!
+        //      The same rule as above applies 
+        var small1 = document.querySelector("small");
+        small1.innerHTML = "Tee hee"
+
+    //      But what if you didn't want to select 
+        //      the first element it finds that matches 
+        //      the query?
+
+        //note: Rather that js searching the whole document 
+        //      for the first small element. It just searches 
+        //      for the first in the pre-defined object "red".
+        var small2 = red.querySelector("small");
+        small2.innerHTML = "Boob 1234"
+
+    //      But what if I want to select all of the 
+        //      items with a certain selector?
+
+        //note: Using the querySelectorAll function you can 
+        //      you can select all the elements with a certain 
+        //      selector.
+
+        //      However, this will change the data type to an 
+        //      array.
+
+        //      To do this easier we need to learn how to cycle 
+        //      through a for loop.
+        var lis = document.querySelectorAll("li");
+        lis[0].innerHTML = "Boobs"
+        lis[1].innerHTML = "Vagana"
+        lis[2].innerHTML = "Penishead"
+        lis[3].innerHTML = "doucheflop"
+        lis[4].innerHTML = "erectil disfunction"
+        lis[5].innerHTML = "cocaine"
+        lis[6].innerHTML = "bobchobber"
+        lis[7].innerHTML = "coksnuffer"
+        lis[8].innerHTML = "poopyPants"
+        lis[9].innerHTML = "This isn't what the list orginally said"
+
+    //      Alternatively we can select user inputted text
+        var input = document.querySelector("input");
+        //note: .value gives the javascript access to what 
+        //      the user has entered.
+        console.log(input.value);
+
+
+    //note: So tbf it looks like you just have to use the 
+        //      same syntax as CSS in the querySelector 
+        //      parameters
+        var link = document.querySelector("[href]");
+        link.innerHTML = "go suck on my nuts this works?!"
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

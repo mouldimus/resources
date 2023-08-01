@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="roboto.css">
+    <title>CSS Lessons</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        hr{
+            border-style: solid;
+            border: 0.5px solid #ccc;
+        }
+        .grid{
+            display: flex;
+            gap: 10px;          
+            flex-wrap: wrap;
+            justify-content: center;
+            transition: 325ms all ease;
+        }
+        .cat{
+            display: inline-flex;
+            
+            width: 150px;
+            height: min-content;
+            
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            text-transform: capitalize;
+            border: 1px solid #000;
+            padding: 10px;
+
+            transition: 325ms all ease-in-out;
+        }
+        .sub{
+            transition: 325ms all ease;
+
+            display: none;
+            
+            font-size: 75%;
+            font-weight: normal;
+            text-decoration: none;
+            color: #000;
+        }
+        .cat:hover .sub{
+            display: inline-block;
+        }
+        .cat:hover{
+            box-shadow: 1px 1px 2px #333;
+        }
+        .sub:hover{
+            text-decoration: underline;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Lessons</h1>
+    <hr>
+    <h2>Categories</h2>
+    <div class="grid">
+        <div class="cat">selectors
+            <a class="sub" href="selectors.html">selectors-intro</a>
+            <a class="sub" href="not-selector.html">not-selector</a>
+            <a class="sub" href="child_selectors.html">child-selectors</a>
+            <a class="sub" href="focus-selector.html">focus-selector</a>
+            <a class="sub" href="hover-selector.html">hover-selector</a>
+            <a class="sub" href="checked-selector.html">checked-selector</a>
+            <a class="sub" href="enabled-selector.html">enabled-selector</a>
+            <a class="sub" href="adjacent_selectors.html">adjacent-selector</a>
+            <a class="sub" href="advanced-selectors.html">advanced-selectors</a>
+            <a class="sub" href="disabled-selector.html">disabled-selector</a>
+            <a class="sub" href="attribute-selector.html">attribute-selector</a>
+            <a class="sub" href="ends-with-selectors.html">ends-with-selectors</a>
+            <a class="sub" href="descendant_selectors.html">descendant_selectors</a>
+            <a class="sub" href="last-child-selector.html">last-child-selector</a>
+            <a class="sub" href="exact-value-selector.html">exact-value-selector</a>
+            <a class="sub" href="first-child-selector.html">first-child-selector</a>
+            <a class="sub" href="starts-with-selectors.html">starts-with-selectors</a>
+            <a class="sub" href="contains-value-selector.html">contains-value-selector</a>
+            <a class="sub" href="links.html">links</a>
+        </div>
+        <div class="cat">backgrounds
+            <a class="sub" href="background_colors.html">background_colors</a>
+            <a class="sub" href="background_images.html">background_images</a>
+            <a class="sub" href="background-img-sizing.html">background-img-sizing</a>
+            <a class="sub" href="multiple-background-imgs-at-the-same-time.html">multiple-background-imgs-at-the-same-time</a>
+            <a class="sub" href="repeating_backgrounds.html">repeating_backgrounds</a>
+            <a class="sub" href="linear-gradients.html">linear-gradients</a>
+            <a class="sub" href="rounded-images.html">rounded-images</a>
+            <a class="sub" href="repeating-linear-gradients.html">repeating-linear-gradients</a>
+            <a class="sub" href="repeating-radial-gradients.html">repeating-radial-gradients</a>
+            <a class="sub" href="radial-gradient.html">radial-gradient</a>
+            <a class="sub" href="opacity.html">opacity</a>
+            <a href="RGBA.html" class="sub">RGBA</a>
+            <a href="HSL-and-HSLA.html" class="sub">HSL-and-HSLA</a>
+            <a href="Opacity-vs-Alpha.html" class="sub">Opacity-vs-Alpha</a>
+        </div>
+        <div class="cat">animation
+            <a href="animation-blinking.html" class="sub">animation-blinking</a>
+            <a href="animation-delay.html" class="sub">animation-delay</a>
+            <a href="animation-direction.html" class="sub">animation-direction</a>
+            <a href="animation-fill-mode.html" class="sub">animation-fill-mode</a>
+            <a href="animation-first.html" class="sub">animation-first </a>
+            <a href="animation-iteration-count.html" class="sub">animation-iteration-count</a>
+            <a href="animation-keyframes.html" class="sub">animation-keyframes</a>
+            <a href="animation-mini-project.html" class="sub">animation-mini-project</a>
+            <a href="animation-timing-function.html" class="sub">animation-timing-function</a>
+            <a href="animations-intro.html" class="sub">animation-intro</a>
+            <a href="animations-iteration-count.html" class="sub">animation-iteration-count</a>
+        </div>
+        <div class="cat">transition
+            <a href="transition-color.html" class="sub">transition-color</a>
+            <a href="transition-delay.html" class="sub">transition-delay</a>
+            <a href="transition-size.html" class="sub">transition-size/a>
+            <a href="transitions-intro.html" class="sub">transitions-intro</a>
+            <a href="transiton-timing-function.html" class="sub">transiton-timing-function</a>
+        </div>
+        <div class="cat">transform
+            <a href="transform-3D.html" class="sub">transform-3D</a>
+            <a href="transform-multiple.html" class="sub">transform-multiple</a>
+            <a href="transform-rotate.html" class="sub">transform-rotate/a>
+            <a href="transform-scale.html" class="sub">transform-scale</a>
+            <a href="transform-skew.html" class="sub">transform-skew</a>
+            <a href="transformation-intro.html" class="sub">transformation-intro</a>
+            <a href="transformation-translate.html" class="sub">transformation-translate</a>
+        </div>
+        <div class="cat">misc
+            <a href="width.html" class="sub">width</a>
+            <a href="useful-emmet-abbreviations.html" class="sub">useful-emmet-abbreviations</a>
+            <a href="resize.html" class="sub">resize</a>
+            <a href="mini-project-css-card.html" class="sub">mini-project-css-card</a>
+            <a href="height.html" class="sub">height</a>
+            <a href="float-left-and-right.html" class="sub">float-left-and-right</a>
+            <a href="float.html" class="sub">float</a>
+            <a href="css-variables.html" class="sub">css-variables</a>
+            <a href="columns.html" class="sub">columns</a>
+            <a href="color_types.html" class="sub">color_types</a>
+            <a href="clear.html" class="sub">clear</a>
+            <a href="clear-fix-hack.html" class="sub">clear-fix-hack</a>
+            <a href="centering_an_element.html" class="sub">centering_an_element</a>
+            <a href="box-sizing.html" class="sub">box-sizing</a>
+            <a href="ability-test.html" class="sub">ability-test</a>
+        </div>
+        <div class="cat">text
+            <a href="text-align-last.html" class="sub">text-align-last</a>
+            <a href="text-align.html" class="sub">text-align</a>
+            <a href="text-decoration.html" class="sub">text-decoration</a>
+            <a href="text-intro.html" class="sub">text-intro</a>
+            <a href="text-overflow.html" class="sub">text-overflow</a>
+            <a href="text-word-break.html" class="sub">text-word-break</a>
+            <a href="text-word-wrap.html" class="sub">text-word-wrap</a>
+        </div>
+        <div class="cat">lists
+            <a href="list-style-image.html" class="sub">list-style-image</a>
+            <a href="list_inside_outside.html" class="sub">list_inside_outside</a>
+            <a href="list_styles.html" class="sub">list_styles</a>
+        </div>
+        <div class="cat">shadows
+            <a href="shadow-box.html" class="sub">shadow-box</a>
+            <a href="shadows-intro.html" class="sub">shadows-intro</a>
+            <a href="shadows-text.html" class="sub">shadows-text</a>
+        </div>
+        <div class="cat">psuedo classes
+            <a href="psuedo-classes.html" class="sub">psuedo-classes</a>
+            <a href="psuedo-elements-after.html" class="sub">psuedo-elements-after</a>
+            <a href="psuedo-elements-before.html" class="sub">psuedo-elements-before</a>
+        </div>
+        <div class="cat">position
+            <a href="position.html" class="sub">position</a>
+            <a href="position-absolute.html" class="sub">position-absolute</a>
+            <a href="position-fixed.html" class="sub">position-fixed</a>
+            <a href="position-relative.html" class="sub">position-relative</a>
+            <a href="overlapping-elements.html" class="sub">overlapping-elements</a>
+        </div>
+        <div class="cat">overflow
+            <a href="overflow-auto.html" class="sub">overflow-auto</a>
+            <a href="overflow-elements.html" class="sub">overflow-elements</a>
+            <a href="overflow-hidden.html" class="sub">overflow-hidden</a>
+            <a href="overflow-scroll.html" class="sub">overflow-scroll</a>
+        </div>
+        <div class="cat">font
+            <a href="font-family.html" class="sub">font-family</a>
+            <a href="font-size.html" class="sub">font-size</a>
+            <a href="font-variant.html" class="sub">font-variant</a>
+            <a href="font-weight.html" class="sub">font-weight</a>
+            <a href="custom-fonts.html" class="sub">custom-fonts</a>
+        </div>
+        <div class="cat">tables
+            <a class="sub" href="tables.html">tables</a>
+            <a class="sub" href="table-borders.html">table-borders</a>
+            <a class="sub" href="table-cell-vertical-align.html">table-cell-vertical-align</a>
+            <a class="sub" href="table-row-hover.html">table-row-hover</a>
+        </div>
+        <div class="cat">borders
+            <a class="sub" href="borders.html">borders</a>
+            <a class="sub" href="border-radius.html">border-radius</a>
+            <a class="sub" href="table-borders.html">table-borders</a>
+            <a class="sub" href="individually-rounded-corners.html">individually-rounded-corners</a>
+        </div>
+        <div class="cat">display
+            <a href="display-inline-block.html" class="sub">display-inline-block</a>
+            <a href="display-intro.html" class="sub">display-intro</a>
+        </div>
+        <div class="cat">Rulings
+            <a href="inline_internal_external_css.html" class="sub">inline_internal_external_css</a>
+        </div>
+    </div>    
+</body>
+</html>

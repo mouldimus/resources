@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-delay</title>
+    <link rel="stylesheet" href="roboto.css">
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background: #000;
+            margin: 0 auto;
+            animation: blinking 1s ease 2s 2  forwards;
+
+        }
+        @keyframes blinking {
+            0%{opacity: 1;}
+            50%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <h1>animation-delay</h1>
+    <hr>
+    <p>This one again was pretty easy. It's the same as the transition attribute with extra steps.
+        
+    </p>
+    <div class="box"></div>
+    <div class="code-container">
+        <h3>Example</h3>
+        <blockquote class="code">.box{<br>
+            width: 150px;<br>
+            height: 150px;<br>
+            background: #000;<br>
+            margin: 0 auto;<br>
+            animation: blinking 1s ease 2s 2  forwards; <br>
+<br>
+        }<br>
+        @keyframes blinking {<br>
+            0%{opacity: 1;}<br>
+            50%{opacity: 0;}<br>
+            100%{opacity: 1;}<br>
+        }<br>
+    </blockquote>
+    </div>
+</body>
+</html>

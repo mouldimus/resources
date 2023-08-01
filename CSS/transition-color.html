@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-color</title>
+    <link rel="stylesheet" href="roboto.css">
+    <style>
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        a:hover{
+            color: #0000ff;
+        }
+        a{
+            transition-duration: 0.5s;
+            transition-property: color;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>transition-color
+        <hr>
+    </h1>
+    <a href="#">Change color on hover</a>
+    <p>Again, just like with <a href="transition-size.html">transition-size</a> you'll need to create an element with two different attribute values, on different element states.</p>
+    <div class="code-container">
+        <h3>Example</h3>
+        <blockquote class="code">
+            a{<br>
+                text-decoration: none;<br>
+                color: #000;<br>
+            }<br>
+            a:hover{<br>
+                color: #0000ff;<br>
+            }<br>
+        </blockquote>
+    </div>
+    <p>Then, just like with the <a href="transition-size.html">transition-size</a> you'll want the define the transition-duration, transition-property and transition-timing-function.</p>
+    <div class="code-container">
+        <h3>Example</h3>
+        <blockquote class="code">
+            a{<br>
+                transition-duration: 0.5s;<br>
+                transition-property: color;<br>
+                transition-timing-function: ease-in-out;<br>
+            }<br>
+        </blockquote>
+    </div>
+</body>
+</html>

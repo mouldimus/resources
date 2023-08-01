@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox-rows-and-columns</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      div[class] {
+        display: flex;
+      }
+      div div {
+        flex: 1 1 33%;
+        border: 1px solid #000;
+      }
+      .parent1 {
+        flex-direction: row;
+      }
+      .parent2 {
+        flex-direction: row-reverse;
+      }
+      .parent3 {
+        flex-direction: column;
+      }
+      .parent4 {
+        flex-direction: column-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flexbox-rows-and-columns</h1>
+    <hr />
+    <p>
+      flex-direction essentially effects the way the child elements are
+      displayed, within the parent.
+    </p>
+    <p>
+      Whether they are displayed in a row or in a column, or reversed order.
+    </p>
+    <h2>flex-direction: row;</h2>
+    <div class="parent1">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+    </div>
+    <h2>flex-direction: row-reverse;</h2>
+    <div class="parent2">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+    </div>
+    <h2>flex-direction: column;</h2>
+    <div class="parent3">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+    </div>
+    <h2>flex-direction: column-reverse;</h2>
+    <div class="parent4">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+    </div>
+  </body>
+</html>

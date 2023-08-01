@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // First, create an array of data for the loop to cycle through
+
+        var nums=[1,2,3,4,5,6,7,8,9,10];
+
+        //Next, you'll need to create the conditionals for the loop running
+        // 1. assign a variable that'll keep track of the amount of times it's run through the loop
+        //    starting at 0
+        // 2. then say how long you want the loop to run for,
+        //    so i put, keep running for as long as the number of times 
+        //    it has gone through the loop, are smaller than the amount of items in the array
+        //    (Until it has gone through the array once)
+        // 3. then say how many indexes you'd like to move up by, after every loop cycle
+        //    (i++ is shorthand for i=i+1 i.e move up one index)
+
+        //  Then you've just got to write what you want it to do for each item in the array
+        //  Simple.
+        
+        for(let i = 0;i < nums.length;i++){
+            if((nums[i]/2)%1 === 0){
+                nums[i]=nums[i]*nums[i]
+            }
+        }
+
+        
+
+
+
+    </script>
+</body>
+</html>

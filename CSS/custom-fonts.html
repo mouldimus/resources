@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom-fonts</title>
+    <style>
+        @font-face {
+            font-family: "roboto";
+            font-weight: 900;
+            src: url(fonts/Roboto/Roboto-Black.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 900;
+            font-style: italic;
+            src: url(fonts/Roboto/Roboto-BlackItalic.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 700;
+            src: url(fonts/Roboto/Roboto-Bold.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 700;
+            font-style: italic;
+            src: url(fonts/Roboto/Roboto-BoldItalic.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 500;
+            src: url(fonts/Roboto/Roboto-Medium.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 500;
+            font-style: italic;
+            src: url(fonts/Roboto/Roboto-MediumItalic.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 400;
+            src: url(fonts/Roboto/Roboto-Regular.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 400;
+            font-style: italic;
+            src: url(fonts/Roboto/Roboto-Italic.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 300;
+            src: url(fonts/Roboto/Roboto-Light.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 300;
+            font-style: italic;
+            src: url(fonts/Roboto/Roboto-LightItalic.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 100;
+            src: url(fonts/Roboto/Roboto-Thin.ttf);
+        }
+        @font-face {
+            font-family: "roboto";
+            font-weight: 100;
+            font-style: italic;
+            src: url(fonts/Roboto/Roboto-ThinItalic.ttf);
+        }
+        body{
+            font-family: "roboto";
+        }
+        h1{
+            font-weight: 100;
+            font-style: italic;
+        }
+        blockquote{
+            background: #000;
+            color: #00ff00;
+            padding: 10px;
+            border-left: 10px solid #00ff00;
+            border-radius: 10px 0 0 10px;
+            font-family: monospace;
+        }
+        div{
+            background: #ccc;
+            padding: 10px 10px 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>custom-fonts</h1>
+    <hr>
+    <div>
+        <p>Installing custom fonts into  a website is fairly easy, just tedious.</p>
+        <p>You start off by creating a @font-face rule for each different font-style and font-weight.</p>
+        <p>Then inside each on of those rules, you'll need to name the font-family and specify its font-weight and font-style.</p>
+        Finally, insert the url into the src of the font-style and font-weight required.
+        <h3>Example</h3>
+    <blockquote>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 900;<br>
+            src: url(fonts/Roboto/Roboto-Black.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 900;<br>
+            font-style: italic;<br>
+            src: url(fonts/Roboto/Roboto-BlackItalic.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 700;<br>
+            src: url(fonts/Roboto/Roboto-Bold.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 700;<br>
+            font-style: italic;<br>
+            src: url(fonts/Roboto/Roboto-BoldItalic.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 500;<br>
+            src: url(fonts/Roboto/Roboto-Medium.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 500;<br>
+            font-style: italic;<br>
+            src: url(fonts/Roboto/Roboto-MediumItalic.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 400;<br>
+            src: url(fonts/Roboto/Roboto-Regular.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 400;<br>
+            font-style: italic;<br>
+            src: url(fonts/Roboto/Roboto-Italic.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 300;<br>
+            src: url(fonts/Roboto/Roboto-Light.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 300;<br>
+            font-style: italic;<br>
+            src: url(fonts/Roboto/Roboto-LightItalic.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 100;<br>
+            src: url(fonts/Roboto/Roboto-Thin.ttf);<br>
+        }<br>
+        @font-face {<br>
+            font-family: "roboto";<br>
+            font-weight: 100;<br>
+            font-style: italic;<br>
+            src: url(fonts/Roboto/Roboto-ThinItalic.ttf);<br>
+        }<br>
+    </blockquote>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="roboto.css" />
+    <title>animation-blinking</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        background: red;
+        margin: 0 auto;
+        opacity: 0;
+        animation: blinking 4s forwards;
+      }
+      @keyframes blinking {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>animation-blinking</h1>
+    <hr />
+    <div class="box"></div>
+  </body>
+</html>

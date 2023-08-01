@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Selectors</title>
+    <style>
+        form label{
+            font-weight:bold;
+        }
+        form label + input{
+            border: 1px solid red;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adjacent Selcetors</h1>
+    <hr>
+    <main>
+        <div>
+            <div>
+                <label for="123">Funny Text Here</label>
+            </div>
+            <p class="123">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, vero suscipit maxime natus nobis veritatis sapiente qui cum, omnis amet facilis quo cupiditate expedita quos excepturi sit doloremque! Laborum, officiis.</p>
+        </div>
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vitae voluptate ipsa vel, magnam ab doloribus dolorum quas soluta odit, quos quaerat voluptatibus consequatur nostrum. Doloremque ab a recusandae id.</blockquote>
+        <form action="">
+            <div>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="">
+                    <input type="text" name="lastName" id="">
+                </div>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>

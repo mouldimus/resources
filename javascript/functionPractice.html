@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+</head>
+<body>
+    <h1 id="header"></h1>
+    <hr>
+    <div id="main"></div>
+    
+
+    <script>
+        function percent(part,whole){
+            var part = Number(part)
+            var whole = Number(whole)
+            //if they are a number higher than 0 (true)
+            if(part && whole){
+                //percentage equation
+                return part / whole * 100;
+            }else{
+                //if parameters are not a number or 0
+                return 0;
+            }
+        }
+        var answ1 = percent("7658",12734);
+        console.log(answ1);
+        console.log(percent(22,75));
+
+
+        //shortcutting the .getElementById
+        function $(id){
+            return document.getElementById(id);
+        }
+        var main = $("main");
+        main.innerHTML = "Suck ya nan";
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

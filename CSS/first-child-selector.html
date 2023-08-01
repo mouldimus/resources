@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first-child-selector</title>
+    <style>
+        p.child:first-child{
+            background: red;
+        }
+        div#parent{
+            border:1px black solid
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>first-child-selector</h1>
+    <hr>
+
+    <p class="child">So a <b>:first-child</b> selector only selects the first child element of a group of elements inside a container/parent. </p>
+    <p class="child">kjshfdvjhesv</p>
+    <div id="parent">
+        <p class="child">First p</p>
+        <p class="child">Second p</p>
+        <p class="child">Third p</p>
+    </div>
+    <div id="parent">
+        <p class="child">kshjvkh sv</p>
+        <p class="child">kshjvkh sv</p>
+        <p class="child">kshjvkh sv</p>
+        <p class="child">kshjvkh sv</p>
+
+    </div>
+
+</body>
+</html>

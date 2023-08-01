@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-size</title>
+    <link rel="stylesheet" href="roboto.css">
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 1px solid #000;
+            background: #0000ff;
+            display: inline-block;                    
+        }
+        .box:hover{
+            height: 250px;
+            width: 250px;
+        }
+        .box{
+            transition: 325ms height linear, 
+                        325ms width linear;
+                    /* time  attribute speed-curve */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>transition-size</h1>
+    <hr>
+    <div class="box"></div>
+    <p>Transitions are pretty simple really.</p>
+    <p>Start off by creating two things, in different states, you want to transition together.</p>
+    <div class="code-container">
+
+        <h3>Example</h3>
+        <blockquote class="code">        .box{<br>
+            height: 50px;<br>
+            width: 50px;<br>
+            border: 1px solid #000;<br>
+            background: #0000ff;<br>
+            display: inline-block;       <br>             
+        }<br><br>
+        .box:hover{<br>
+            height: 250px;<br>
+            width: 250px;<br>
+        }<br></blockquote>
+    </div>
+    <p>Then add the transition attribute to the default state of the element. Using the shorthand, transition, you can put more than one attribute together in one line of code. </p>
+    <p>The main ones you need to worry about are:</p>
+    <ol>
+        <li>Length of time you want the transition to last</li>
+        <li>The attribute you are transitioning</li>
+        <li>The speed curve at which it flows through the transition</li>
+    </ol>
+    <div class="code-container">
+        <h3>Example</h3>
+        <blockquote class="code">
+
+        .box{<br>
+            transition: 325ms height linear, <br>
+                        325ms width linear;<br>
+                    /* time  attribute speed-curve */<br>
+        }<br>
+        </blockquote>
+    </div>
+</body>
+</html>

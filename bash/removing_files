@@ -1,0 +1,27 @@
+the command rm will delete the file specified
+USE WITH CAUTION! this will permantly delete the file, no trash, no warning, it's gone
+
+for example
+
+rm index.html
+
+would PERMANTLY remove the file "index.html" from my computer
+
+the command rmdir, as you can imagine removes the specified directory
+
+for example
+
+rmdir no\ spaces
+
+will PERMANTLY delete the folder "no spaces"
+
+however, the terminal does not let you remove directories with files inside by default 
+
+using the flag keys we can remove file directories and their contents on mass.
+-for more info on flags see flags
+
+for example 
+
+rm -r folder-name
+
+would delete the folder and all of its contents PERMANTLY

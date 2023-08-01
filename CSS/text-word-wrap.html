@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-word-wrap</title>
+    <style>
+        div{
+            border: 1px solid #000;
+            width: 250px;
+            margin: 10px;
+            padding: 5px;
+        }
+        .word-wrap{
+            word-wrap: break-word;
+        }
+        .normal{
+            word-wrap: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>text-word-wrap</h1>
+    <hr>
+    <p>
+    Does anything else need to be said for this? Probably not, it's pretty self explainatory. It breaks words, then wraps them.
+    </p>
+    <div class="word-wrap"><h3>word-wrap: break-word;</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum reiciendis vitae earum est exercitationem iusto, a impedit vero, odio ad repudiandae consequatur perferendis quibusdam. Illo! bllllllaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhh</div>
+    <div class="normal"><h3>word-wrap: normal; (default)</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum reiciendis vitae earum est exercitationem iusto, a impedit vero, odio ad repudiandae consequatur perferendis quibusdam. Illo! bllllllaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaahhhhhhhhhhhhh</div>
+</body>
+</html>

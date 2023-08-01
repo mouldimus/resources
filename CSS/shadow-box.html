@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        html{
+            height:100%;
+        }
+        body{
+            background: linear-gradient(#ddd,#fff);
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background:linear-gradient(120deg,#0000ff,#eee);
+            margin: 50px auto;
+            border-radius: 50%;
+
+            box-shadow: inset 5px 1px 4px #000;
+        }
+        hr{
+            background-color: #0000ff;
+        }
+        .small{
+            font-size: x-small;
+        }
+        .color-box{
+            display:inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #000;
+            border: 1px solid #ccc;
+            margin-left: 5px;
+        }
+        blockquote{
+            background: linear-gradient(#eee,#fff);
+            border: 1px solid #ccc;
+            padding: 5px 50px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>box-shadow</h1>
+    <hr>
+    <div class="box"></div>
+    <p>Frick yeah this looks cool as shit. CSS3 is awesome!</p>
+    <blockquote>            box-shadow: inset&nbsp;&nbsp; 5px&nbsp;&nbsp; 1px&nbsp;&nbsp; 4px&nbsp;&nbsp;<span class="color-box"></span> #000; <p class="small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shadow&nbsp;&nbsp;&nbsp; x-axis&nbsp;&nbsp;&nbsp;&nbsp; y-axis&nbsp;&nbsp;&nbsp;shadow&nbsp;&nbsp;&nbsp;&nbsp;  color<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inside <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outside</p>    <div class="box"></div></blockquote>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear</title>
+    <style>
+        img{
+            width: 150px;
+            height: auto;
+        }
+        img.left{
+            float: left;
+            clear: left;
+        }
+        img.right{
+            float: right;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>clear</h1>
+    <hr>
+    <img src="https://cdn.pixabay.com/photo/2020/01/19/14/47/business-4778044_1280.jpg" alt="" class="left">
+    <p>clear:left; looks like it displays the element affected by the float attribute as a block element to the left of it and a block-inline to the right. <br> clear:right; does the same as left but the other way round. <br>clear:both; displays the element as a block element.
+    </p>
+    <img src="https://cdn.pixabay.com/photo/2020/01/19/14/47/business-4778044_1280.jpg" alt="" class="right">
+</body>
+</html>

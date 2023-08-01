@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-img-sizing</title>
+    <style>
+        div{
+            text-align: center;
+            color: #eee;
+            font-family: Arial, sans-serif;
+            font-weight: 600;
+            height: 250px;
+            width: 250px;
+            background-image: url(https://www.nhm.ac.uk/content/dam/nhmwww/discover/snakebite-effects/mangrove-snake-full-width.jpg.thumb.1160.1160.jpg);
+            display: inline-block;
+            background-position: center center;
+            background-size: 50%;
+            background-size: 250px 250px;
+            background-size: cover;
+            background-size: contain;
+        }
+        li{
+            font-weight: bold;
+            list-style-type:decimal;
+        }
+        span.cover{
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: transparent;
+        }
+        span.cover:before{
+            position: relative;
+            content: "";
+            top: -1px;
+            left: -13.5px;
+            display: inline-block;
+            width: 75px;
+            height: 50px;
+            border: 1px solid red;
+            background-color: transparent;
+            z-index: -1;
+        }
+        span.contain1{
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: transparent;
+        }
+        span.contain2, span.contain3, span.contain4{
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+            border: 1px solid red;
+            background-color: transparent;
+            z-index: -1;
+            
+        }
+        span.contain2{
+            top: 11.5px;
+            left: -1px;
+        }
+        span.contain3{
+            top: -46px;
+            left: -1px;
+        }
+        span.contain4{
+            top: -24.9px;
+            left: -1px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>background-img-sizing</h1>
+    <hr>
+    <div></div>
+    <p>There are four different ways you can change a background size. They are:</p>
+    <ul>
+        <li>Cover</li>
+        <p>Covers the specified area with the img until either width or height hits that limit then stops there.</p>
+        <span class="cover"></span>
+        <li>Contain</li>
+        <p>Contain fits all of the img in the specified area, without changing the resolution size, then repeats the img until the specified area is full.</p>
+        <span class="contain1">
+            <span class="contain2"></span>
+            <span class="contain3"></span>
+            <span class="contain4"></span>
+        </span>
+        <li>px, cm, mm, inches, etc</li>
+        <p>Set the height and width using measurements</p>
+        <li>Percentage</li>
+        <p>Set the height and width using a percentage of the specified area.</p>
+    </ul>
+</body>
+
+</html>

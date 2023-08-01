@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width</title>
+    <style>
+        div{
+            display: block;
+            border: 1px red solid;
+            width: 75%;            
+        }
+        div+div{
+            display:inline-block;
+            border: 1px solid blue;
+            width: 50%
+        }
+        div+div+div{
+            display: inline;
+            border: green 1px solid;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h1>width</h1>
+    <hr>
+    <div>
+        Block elements can have a width asigned to them, However nothing can be put in the other part of the block element.<br>
+        So it's essentially like asigning the rest of the width to margin.
+    </div>
+    <div>
+        Inline-block elements are the best of both worlds. They can have a width asigned to them whilst still being flexible in positioning.
+    </div>
+    <div>
+        Inline elements cannot have their widths changed.
+    </div>
+</body>
+</html>

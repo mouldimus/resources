@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox-wrap</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      .row {
+        display: flex;
+      }
+      .col {
+        flex: 0 0 25%;
+        border: 1px solid #000;
+      }
+      .col2 {
+        flex: 0 0 60%;
+      }
+      .container1 .row {
+        flex-wrap: wrap;
+      }
+      .container2 .row {
+        flex-wrap: nowrap;
+      }
+      .container3 .row {
+        flex-wrap: wrap-reverse;
+      }
+      .col1 {
+        background: green;
+      }
+      .col2 {
+        background: orange;
+      }
+      .col3 {
+        background: red;
+      }
+      .row {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flexbox-wrap</h1>
+    <hr />
+    <p>All elements cannot grow nor shrink.</p>
+    <p>
+      The flex-wrap attribute is determines what happens if the elements cannot
+      fit on one page together
+    </p>
+    <h2>flex-wrap: wrap;</h2>
+    <div class="container1">
+      <div class="row row1">
+        <div class="col col1">row1 col1</div>
+        <div class="col col2">row1 col2</div>
+        <div class="col col3">row1 col3</div>
+      </div>
+      <div class="row row2">
+        <div class="col col1">row2 col1</div>
+        <div class="col col2">row2 col2</div>
+        <div class="col col3">row2 col3</div>
+      </div>
+      <div class="row row3">
+        <div class="col col1">row3 col1</div>
+        <div class="col col2">row3 col2</div>
+        <div class="col col3">row3 col3</div>
+      </div>
+    </div>
+    <h2>flex-wrap: no-wrap;</h2>
+    <div class="container2">
+      <div class="row row1">
+        <div class="col col1">row1 col1</div>
+        <div class="col col2">row1 col2</div>
+        <div class="col col3">row1 col3</div>
+      </div>
+      <div class="row row2">
+        <div class="col col1">row2 col1</div>
+        <div class="col col2">row2 col2</div>
+        <div class="col col3">row2 col3</div>
+      </div>
+      <div class="row row3">
+        <div class="col col1">row3 col1</div>
+        <div class="col col2">row3 col2</div>
+        <div class="col col3">row3 col3</div>
+      </div>
+    </div>
+    <h2>flex-wrap: wrap-reverse;</h2>
+    <div class="container3">
+      <div class="row row1">
+        <div class="col col1">row1 col1</div>
+        <div class="col col2">row1 col2</div>
+        <div class="col col3">row1 col3</div>
+      </div>
+      <div class="row row2">
+        <div class="col col1">row2 col1</div>
+        <div class="col col2">row2 col2</div>
+        <div class="col col3">row2 col3</div>
+      </div>
+      <div class="row row3">
+        <div class="col col1">row3 col1</div>
+        <div class="col col2">row3 col2</div>
+        <div class="col col3">row3 col3</div>
+      </div>
+    </div>
+  </body>
+</html>

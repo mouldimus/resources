@@ -1,0 +1,11 @@
+using the vscode command pallete i have installed a few commands specifically for vscode
+i did this by searching "shell commands" and installing the code
+
+Commands you should know:
+1. code --help
+This will display all the commands available with the vscode command by default.
+2. code -r filename 
+This will open the file in a new window
+3. code -a directoryname
+This will add the directory to your workspace
+4.

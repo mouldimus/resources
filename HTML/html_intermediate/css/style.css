@@ -1,0 +1,16 @@
+body{
+    background-color: azure;
+    align-content: center;
+    text-align: center;
+}
+.form_container{
+    align-content: center;
+    text-align: left;
+    width: 25%;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+input {
+background-color: azure;
+
+}

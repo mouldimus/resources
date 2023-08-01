@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-justify-content</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      .row {
+        display: flex;
+        height: 150px;
+        background: #000;
+        align-items: center;
+        border: 1px solid #fff;
+      }
+      .col {
+        background: #00f;
+        color: #fff;
+        height: 50px;
+        flex: 0 1 20%;
+      }
+
+      .row3 {
+        justify-content: space-evenly;
+      }
+      .row1 {
+        justify-content: space-around;
+      }
+      .row2 {
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flex-justify-content</h1>
+    <hr />
+    <p>using justify-content you can space elements diffently.</p>
+    <p>Here's how:</p>
+    <div class="code-container">
+      <h3>justify-content: space-evenly;</h3>
+      <div class="row row3">
+        <div class="col">box</div>
+        <div class="col">box</div>
+        <div class="col">box</div>
+      </div>
+      <blockquote class="code">
+        .parent{<br />display: flex;<br />justify-content: space-evenly;<br />}
+      </blockquote>
+    </div>
+    <div class="code-container">
+      <h3>justify-content: space-around;</h3>
+      <div class="row row1">
+        <div class="col">box</div>
+        <div class="col">box</div>
+        <div class="col">box</div>
+      </div>
+      <blockquote class="code">
+        .parent{<br />display: flex;<br />justify-content: space-around;<br />}
+      </blockquote>
+    </div>
+    <div class="code-container">
+      <h3>justify-content: space-between;</h3>
+      <div class="row row2">
+        <div class="col">box</div>
+        <div class="col">box</div>
+        <div class="col">box</div>
+      </div>
+      <blockquote class="code">
+        .parent{<br />display: flex;<br />justify-content: space-between;<br />}
+      </blockquote>
+    </div>
+  </body>
+</html>

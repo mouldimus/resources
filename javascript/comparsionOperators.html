@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparsionOperators</title>
+</head>
+<body>
+    <h1>comparsionOperators</h1>
+    <hr>
+    <p id="ifTom"> // assignment operator = it is said value<br>
+        // comparison operator == is it said value?<br>
+        <ul id="hideIfNotTom">
+            Other comparison operators
+            <li> !=    &nbsp;&nbsp;&nbsp;[Does not equal]</li>
+            <li> ==    &nbsp;&nbsp;[Equals]</li>
+            <li> ===   [Scrict equals]</li>
+            <li> &gt;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Greater than]</li>
+            <li> &lt;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Less than]</li>
+            <li> &gt;= &nbsp;&nbsp;&nbsp;[Greater than or equal to]</li>
+            <li> &lt;= &nbsp;&nbsp;&nbsp;[Less than or equal to]</li>
+        </ul>
+    </p>
+
+
+
+
+    <script>
+        // assignment operator = it is said value
+        // comparison operator == is it said value?
+
+        // Other comparison operators
+        // != [Does not equal]
+        // == [Equals]
+        // === [Scrict equals]
+        // > [Greater than]
+        // < [Less than]
+        // >= [Greater than or equal to]
+        // <= [Less than or equal to]
+
+        var name = prompt("What's your name?");
+        var ifTom = document.getElementById("ifTom");
+        var hideIfNotTom = document.getElementById("hideIfNotTom");
+
+        
+
+        if(name.toLowerCase() == "thomas"){
+            alert("FUCK YEAH!! You da best")
+        }
+        else{
+            alert("YOU SUCK " + name.toUpperCase() + "!");
+            ifTom.innerHTML = "<h2>Suck an egg " + name.toUpperCase() + "!</h2>"
+            hideIfNotTom.style = "display: none;"
+        }
+    </script>
+</body>
+</html>

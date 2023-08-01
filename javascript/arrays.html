@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+    <h1>arrays</h1>
+    <hr>
+    <p>An array is just a fancy term for a list</p>
+    <script>
+        firstNames = ["Thomas", "Chelsea", "Rose"];
+        lastNames = ["Hayward", "Topping", "Falconbridge"];
+        ages = [23,23,22];
+        occ = ["Director","Works for the council", "Marketing"];
+
+        friends = [firstNames,lastNames,ages,occ];
+        
+        //Adds a value to the end of the array
+        firstNames.push("Charlie");
+        lastNames.push("Nevitt");
+        ages.push(59);
+        occ.push("Director");
+
+        //Cuts the last value of an array
+        //If not added to a variation it's lost forever
+        endOfFirstNames = firstNames.pop();
+        endOfLastNames = lastNames.pop();
+        endOfAges = ages.pop();
+        endOfOcc = occ.pop();
+
+        //Copies the values from the start of index 0 in the array to the start of the index 2 in the array
+        firstTwoFirstNames = firstNames.slice(0,2);
+        firstTwoLastNames = lastNames.slice(0,2);
+        firstTwoAges = ages.slice(0,2);
+        firstTwoOcc = occ.slice(0,2);
+        
+
+
+        console.log(friends);
+    </script>
+</body>
+</html>

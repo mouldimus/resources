@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-absolute</title>
+    <style>
+        body{
+            background-color: gainsboro;
+
+        }
+        div.absolute{
+            width: 50px;
+            height: 50px;
+            background-color: #345;
+            border: 1px solid red;
+            position: absolute;
+            top: calc(50% - 25px);
+            left: calc(50% - 25px);
+        }
+        div.relative{
+            width: 100%;
+            height: 400px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>position-absolute</h1>
+    <hr>
+    <p>For position:absolute; to work the parent element must be set to position:relative; <br>
+        Once set the absolute element will be able to set a position inside the parent element using the following positioning codes: <br>
+        <ul>
+            <li>top: 10px;</li>
+            <li>right: 50px;</li>
+            <li>bottom: 100px;</li>
+            <li>left: 200px;</li>
+        </ul>
+    </p>
+    <p>Additionally, the calc() command can be used, in conjunction to calculate the correct positioning of the child element. <br>
+    <br>
+    For example, I used: <br>
+    top: calc(50% - 25px) <br>
+    Minus 25px to find the centre of the element.
+    </p>
+    <div class="relative">
+        <div class="absolute"></div>
+    </div>
+</body>
+</html>

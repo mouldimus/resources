@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selectors</title>
+    <style>
+         /* This selector is saying, select all p's that are
+         inside a div AT ANY POINT */
+         /* <div>
+                <x>
+                    <y>
+                        <z>
+                            <p></p>
+                        </z>
+                    </y>
+                </x>
+            </div> */
+        div div div p{
+            color: blue;
+        }
+        /* This selector is saying, select all p's that have
+        a DIRECT PARENT LINEAGE of div then div then div. */
+        /* <div>
+                <div>
+                    <div>
+                        <p></p>
+                    </div>
+                </div>
+            </div> */
+                        
+        div > p{
+            color: red;
+        }
+        /* This selector is just saying select all p's */
+        p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Selectors</h1>
+    <hr>
+    <div>
+        <div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui assumenda magnam quae corrupti dolorum blanditiis doloremque provident aut, error molestiae commodi voluptatibus inventore reiciendis perferendis neque sunt! Incidunt, rem.</p>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In laboriosam iure accusamus illum consequuntur voluptatum dignissimos rem pariatur facilis earum, aliquid magnam veniam quibusdam natus omnis qui. Nisi officia, aut earum fugiat, ratione perspiciatis consequatur, voluptates corporis a inventore ipsum.</p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste dolor porro voluptates quis, expedita corporis.</p>
+
+</body>
+</html>

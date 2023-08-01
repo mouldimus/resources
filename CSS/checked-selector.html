@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked-selector</title>
+    <style>
+
+        input:checked+label{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>checked-selector</h1>
+    <hr>
+    <h2>Pancake recipe</h2>
+
+    <input type="checkbox" name="c" id="eggs">
+    <label for="eggs">Eggs</label><br>
+    <input type="checkbox" name="c" id="butter">
+    <label for="butter">Butter</label><br>
+    <input type="checkbox" name="c" id="flour">
+    <label for="flour">Flour</label><br>
+    <input type="checkbox" name="c" id="milk">
+    <label for="milk">Milk</label><br>
+    <input type="checkbox" name="c" id="lemon">
+    <label for="lemon">Lemon</label><br>
+    <input type="checkbox" name="c" id="sugar">
+    <label for="sugar">Sugar</label><br>
+    <p>The <b>:checked</b> psuedo selector effects the style of the html elements that are checked.</p>
+</body>
+</html>

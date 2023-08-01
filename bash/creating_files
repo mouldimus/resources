@@ -1,0 +1,28 @@
+you can use the touch command to create empty files within a specified directory.
+if none is specified it'll create however many you've written within the current directory
+for example:
+
+    touch ~/Documents/personal/coding/index.html style.css script.js
+
+this would create 3 files within the "coding" directory
+
+- index.html
+- style.css
+- script.js
+  it would not matter what directory you were already in because we are stating that ~ which means home
+
+side note: this command was orginally designed to change the date in which the selected file was edited.
+but it turns out if there's no file there with that name the command would create an empty file with that name instead.
+
+you can also make folder or <i>directories</i> using the mkdir
+for example:
+
+    mkdir web_dev
+
+would create a folder in my current directory called web_dev
+
+to specify that you are going to use a space in terminal you must use the \
+
+so to create a directory called "no spaces" you'd write the line
+
+    mkdir no\ spaces

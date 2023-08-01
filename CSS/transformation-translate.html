@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transformation-translate</title>
+    <link rel="stylesheet" href="roboto.css">
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background: #000;
+            position: relative;
+            color: #fff;
+
+
+        }
+        .box::before{
+            content: " ";
+            width: 100%;
+            height: 100%;
+            background: #0000ffbd;
+            position: absolute;
+            z-index: -1;
+
+
+            transition: 325ms transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+        }
+        .box:hover::before{
+            transform: translate(30px, 30px);
+        }
+    </style>
+</head>
+<body>
+    <h1>transformation-translate</h1>
+    <hr>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <p>transform: translate is essentially a shorthand for left, right, up and down.</p>
+    <p>It's used to move elements on a page.</p>
+    <p>side note: the ::before and ::after psuedo selectors can be affected as if they were text.</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear-fix-hack</title>
+    <style>
+        img.float{
+            width: 200px;
+            height: auto;
+            float: right;
+        }
+        div{
+            border: 1px solid red;
+            /* Supposedly fixes something, but there was nothing wrong with mine when I did it */
+            overflow: auto;
+            /*     :/     */
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Clear fix "Hack"</h1>
+    <hr>
+    <div>
+        <p>
+            <img src="https://cdn.pixabay.com/photo/2020/01/19/14/47/business-4778044_1280.jpg" alt="" class="float">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum rem accusantium eos ipsa fugiat officiis non velit debitis, fuga, sequi quidem doloremque unde officia est molestiae. Voluptatem consequatur voluptatibus cupiditate.
+        </p>
+    </div>
+</body>
+</html>

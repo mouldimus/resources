@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant_Selectors</title>
+    <style>
+        /* This essentially means, select anything 
+        within a main, div, p and span tag */
+        main div p span{
+            color: brown;
+        }
+        span{
+            color: blue;
+        }
+        /* Now this span didn't change the 
+        previous span even though it loaded last.
+        This is because, the second selector is 
+        very vague and CSS prefers SPECIFIC selectors. */
+    </style>
+</head>
+<body>
+    <h1>Descendant Selectors & Specificity</h1>
+    <hr>
+    <main>
+
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus dicta ad assumenda velit illo. Unde, id laudantium sed quaerat ut dicta veritatis, perferendis a maxime maiores, consequuntur quasi ex eveniet.
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi nisi placeat, sint modi a debitis doloribus consectetur dignissimos reprehenderit quam earum, voluptatum nesciunt aspernatur labore velit numquam officia temporibus!
+                <span>SPAN. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, saepe. SPAN.</span>
+            </p>
+        </div>
+    </main>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis earum sed dolores amet ipsam sint dolorem voluptates aliquid enim aut sit molestias quae labore, molestiae fuga illo. Nulla, possimus repudiandae?
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, corrupti odio fugiat quidem aspernatur animi quae, suscipit ab architecto officia eos, dolores hic dicta consectetur voluptatem corporis explicabo tempora expedita.</p>
+    </div>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores vel ratione itaque similique iste, labore porro ducimus illo adipisci aspernatur.
+        <span>Lorem, ipsum dolor.</span>
+    </div>
+</body>
+</html>

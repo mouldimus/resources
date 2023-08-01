@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini-project-css-card</title>
+    <style>
+
+        body{
+            background: linear-gradient(#ccc, #fff);
+        }
+        a.card{
+            display: inline-block;
+            height: 300px;
+            width: 225px;
+            background-color: #eee;
+            border: 1px solid #aaa;
+            transition: 325ms box-shadow ease-in-out;
+            text-decoration: none;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px auto;
+        }
+        .container{
+            padding: 5px;
+        }
+        .card-title{
+            padding: 5px;
+            font-weight: bold;
+            width: fit-content;
+        }
+        .card-description{
+            font-size: small;
+        }
+        .card-description:hover{
+            transition: 500ms text-shadow ease-in-out;
+            text-shadow: 2px 2px 5px rgba(130, 153, 190, 0.963);
+        }
+        a.card:hover{
+            box-shadow: 3px 5px 4px rgb(120, 128, 156);
+
+        }
+        .card-title:hover{
+            text-decoration: underline;
+            animation: scale 1s ease-in-out;
+        }
+        a.card:hover{
+            /* transition: 325ms transform ease-in-out; */
+            /* transform:scale(95%, 95%);
+            transform: rotate(9deg); */
+            animation: wiggle 300ms ease-in-out;
+        }
+        @keyframes wiggle {
+            0%{
+                transform: rotate(0deg);
+            }
+            33%{
+                transform: rotate(3deg);
+            }
+            66%{
+                transform: rotate(-3deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes scale {
+            0%{
+                transform: scale(100%);
+                background-color: #fff;
+                color: #000;
+            }
+            33%{
+                transform: scale(115%);
+                background-color: blue;
+                color: #fff;
+            }
+            66%{
+                transform: scale(115%);
+                background-color: blue;
+                color: #fff;
+            }
+            100%{
+                transform: scale(100%);
+                background-color: #fff;
+                color: #000;
+            }
+        }
+        div.image{
+            height: 180px;
+            width: 225px;
+
+            background-image: url("https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=476047&type=card");
+            background-position: 50% 25%;
+            background-color: #666;
+            /* border: 1px solid red; */
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>mini-project-css-card</h1>
+    <hr>
+    <a id="korvold" href="#" class="card">
+        <div class="card-title">Korvold, Fae-Cursed King</div>
+        <div class="image"></div>
+        <!-- <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=476047&type=card" alt=""> -->
+        <div class="container">
+                <div class="card-description">Flying
+                    Whenever Korvold, Fae-Cursed King enters the battlefield or attacks, sacrifice another permanent. Whenever you sacrifice a permanent, put a +1/+1 counter on Korvold and draw a card.</div>
+        </div>
+    </a>
+    <a href="#" class="card">
+        <div class="image"></div>
+        <!-- <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=476047&type=card" alt=""> -->
+        <div class="container">
+            <div class="card-title">Korvold, Fae-Cursed King</div>
+                <div class="card-description">Flying
+                    Whenever Korvold, Fae-Cursed King enters the battlefield or attacks, sacrifice another permanent. Whenever you sacrifice a permanent, put a +1/+1 counter on Korvold and draw a card.</div>
+        </div>
+    </a>
+    <a href="#" class="card">
+        <div class="image"></div>
+        <!-- <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=476047&type=card" alt=""> -->
+        <div class="container">
+            <div class="card-title">Korvold, Fae-Cursed King</div>
+            <div class="card-description">Flying
+                    Whenever Korvold, Fae-Cursed King enters the battlefield or attacks, sacrifice another permanent. Whenever you sacrifice a permanent, put a +1/+1 counter on Korvold and draw a card.</div>
+        </div>
+    </a>
+    <a href="#" class="card">
+        <div class="image"></div>
+        <!-- <img src="https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=476047&type=card" alt=""> -->
+        <div class="container">
+            <div class="card-title">Korvold, Fae-Cursed King</div>
+                <div class="card-description">Flying
+                    Whenever Korvold, Fae-Cursed King enters the battlefield or attacks, sacrifice another permanent. Whenever you sacrifice a permanent, put a +1/+1 counter on Korvold and draw a card.</div>
+        </div>
+    </a>
+
+</body>
+</html>

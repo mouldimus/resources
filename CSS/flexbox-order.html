@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox-order</title>
+    <link rel="stylesheet" href="roboto.css" />
+    <style>
+      .container {
+        display: flex;
+      }
+      .container div {
+        flex: 0 1 20%;
+        border: 1px solid #000;
+      }
+      .box1 {
+        order: 4;
+      }
+      .box2 {
+        order: 1;
+      }
+      .box3 {
+        order: 2;
+      }
+      .box4 {
+        order: 3;
+      }
+      .order1 {
+        order: 3;
+      }
+      .order3 {
+        order: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>flexbox-order</h1>
+    <hr />
+    <div class="container">
+      <div class="box1">element 1</div>
+      <div class="box2">element 2</div>
+      <div class="box3">element 3</div>
+      <div class="box4">element 4</div>
+    </div>
+    <p>There <i>is</i> a way to reorder elements using CSS.</p>
+    <p>However, all elements must be child to the display: flex; parent.</p>
+    <p>
+      Pretty sure if one has an order value the element gets put after the other
+      elements within the family.
+    </p>
+    <div class="code-container">
+      <h3>For Example</h3>
+      <blockquote class="code">
+        .container {<br />
+        display: flex;<br />
+        }<br />
+        .container div {<br />
+        flex: 0 1 20%;<br />
+        }<br /><br />
+        .box1 {<br />
+        order: 4;<br />
+        }<br />
+        .box2 {<br />
+        order: 1;<br />
+        }<br />
+        .box3 {<br />
+        order: 2;<br />
+        }<br />
+        .box4 {<br />
+        order: 3;<br />
+        }<br />
+      </blockquote>
+    </div>
+    <div class="container">
+      <div class="order1">element 1 order: 3;</div>
+      <div class="order2">element 2 no order assigned</div>
+      <div class="order3">element 3 order: 2;</div>
+      <div class="order4">element 4 no order assigned</div>
+    </div>
+    <div class="code-container">
+      <h3>Order testing</h3>
+      <blockquote class="code">
+        .order1 {<br />
+        order: 3;<br />
+        }<br />
+        .order3 {<br />
+        order: 2;<br />
+        }<br />
+      </blockquote>
+    </div>
+  </body>
+</html>

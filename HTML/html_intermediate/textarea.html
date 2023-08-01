@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Area</title>
+    <style>
+        .formBorder{
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 20px;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        input{
+            font-size: large;
+            padding: 4px;
+            border-radius: 6px;
+            border: 1px solid gray;
+        }
+        .emailTextarea{
+            font-size: large;
+            padding: 4px;
+            border-radius: 10px;
+        }
+        .submitButton{
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 125px;
+            padding-right: 125px;
+            border: none;
+            font-size: large;
+        }
+
+        .containters{
+            padding: 5px;
+            font-size:x-large;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .innerContainers{
+            padding: 5px;
+        }
+        .headers{
+            font-weight:600;
+        }
+    </style>
+</head>
+<body>
+    <h1>&lt;textarea&gt; + &lt;form&gt;</h1>
+    <div class="formBorder">
+        <form type="form" action="mailto:thomas@sportstore.co.uk">
+         <div class="containters">
+            <label class="headers" for="name">Your name</label>
+            <div class="innerContainers">
+                <input type="text" required="required" name="name" id="emailfirstname" placeholder="First Name" autofocus="autofocus">
+                <input type="text" required="required" name="name" id="emaillastname" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="containters">
+            <label class="headers" for="email">Your email address</label>
+            <div class="innerContainers">
+                <input type="email" name="email" id="emailaddress" required="required" placeholder="Email address">
+            </div>
+        </div>
+        <div class="containters">
+            <label class="headers" for="subject">Your subject</label>
+            <div class="innerContainers">
+                <input type="text" name="subject" id="emailsubject" required placeholder="Subject">
+            </div>
+        </div>
+        <div class="containters">
+            <label class="headers" for="emailformcontent">Your message</label>
+            <div class="innerContainers">
+                <textarea name="emailformcontent" id="emailcontent" required class="emailTextarea" cols="65" rows="10" placeholder="500 characters max" maxlength="500" minlength="20"></textarea>
+            </div>
+        </div>
+            <div class="containters">
+                <input type="submit" name="submit" id="emailsubmit" required class="submitButton" >
+            </div>
+        </form>
+    </div>
+</body>
+</html>

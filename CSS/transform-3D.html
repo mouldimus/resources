@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="roboto.css" />
+    <title>transform-3D</title>
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        background: #000;
+        margin: 50px auto;
+        transition: 1s all ease-in-out;
+      }
+      .container:hover .box1 {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+        background: blue;
+      }
+      .container:hover .box2 {
+        transform: scaleX(2) scaleY(2) scaleZ(2);
+        background: red;
+      }
+      .container:hover .box3 {
+        transform: translateX(20px) translateY(20px) translateZ(20px);
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>transform-3D</h1>
+    <hr />
+    <p>
+      Almost all transform values have 3D capabilites, to spot which ones just
+      look out for the X, Y and Z axises in the values.
+    </p>
+    <p>The ones that have 3 dimensions are:</p>
+    <div class="container">
+      <div class="box box1"></div>
+    </div>
+    <div class="code-container">
+      <h3>rotate()</h3>
+      <blockquote class="code">
+        .container:hover .box1 {<br />
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);<br />
+        background: blue;<br />
+        }
+      </blockquote>
+    </div>
+    <div class="container">
+      <div class="box box2"></div>
+    </div>
+    <div class="code-container">
+      <h3>scale()</h3>
+      <blockquote class="code">
+        .container:hover .box2 {<br />
+        transform:scaleX(2) scaleY(2) scaleZ(2);<br />
+        background: red;<br />
+        }
+      </blockquote>
+    </div>
+    <div class="container">
+      <div class="box box3"></div>
+    </div>
+    <div class="code-container">
+      <h3>translate()</h3>
+      <blockquote class="code">
+        .container:hover .box3 {<br />
+        transform: translateX(20px) translateY(20px) translateZ(20px);<br />
+        background: green;<br />
+        }<br />
+      </blockquote>
+    </div>
+  </body>
+</html>

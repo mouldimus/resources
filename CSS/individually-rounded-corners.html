@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>individually-rounded-corners</title>
+    <style>
+        div{
+            text-align: center;
+            color: #eee;
+            font-family: Arial, sans-serif;
+            font-weight: 600;
+            height: 250px;
+            width: 250px;
+            background-image: url(https://www.nhm.ac.uk/content/dam/nhmwww/discover/snakebite-effects/mangrove-snake-full-width.jpg.thumb.1160.1160.jpg);
+            display: inline-block;
+            background-position: center center;
+            /* individual border radius */
+            border-top-left-radius: 25%;
+            border-bottom-right-radius: 25%;
+        }
+        span{
+            text-align: center;
+            color: #eee;
+            font-family: Arial, sans-serif;
+            font-weight: 600;
+            height: 250px;
+            width: 250px;
+            background-image: url(https://www.nhm.ac.uk/content/dam/nhmwww/discover/snakebite-effects/mangrove-snake-full-width.jpg.thumb.1160.1160.jpg);
+            display: inline-block;
+            background-position: center center;
+            /* shorthand for multiple border radius */
+            border-radius: 25% 0 50% 15px;
+                        /* TL TR BL BR */
+        }
+    </style>
+</head>
+<body>
+    <h1>individually-rounded-corners</h1>
+    <hr>
+    <div>Individual</div><span>Shorthand</span>
+    <P>Borders can be individually asigned using CSS3. Using both the individual and shorthand.</P>
+</body>
+</html>

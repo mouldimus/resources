@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-rotate</title>
+    <link rel="stylesheet" href="roboto.css">
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background: #000;
+            margin: 10px auto;
+            transition: 1s all cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        .box:hover{
+            background: #0000ff;
+            height: 175px;
+            width: 175px;
+        }
+        .box1:hover{transform: rotateX(180deg);}
+        .box2:hover{transform:rotateY(180deg);}
+        .box3:hover{transform: rotateZ(90deg);}
+    </style>
+</head>
+<body>
+        <h1>transform-rotate</h1>
+        <hr>
+        <p>Using rotateX(), I can rotate elements as if they were 3D </p>
+        <div class="code-container">
+            <div class="code">  .box{<br>
+                width: 150px;<br>
+                height: 150px;<br>
+                background: #000;<br>
+                margin: 10px auto;<br>
+                transition: 1s all cubic-bezier(0.77, 0, 0.175, 1);<br>
+            }<br>
+            .box:hover{<br>
+                background: #0000ff;<br>
+                height: 175px;<br>
+                width: 175px;<br>
+            }<br></div>
+        </div>
+        <h4>rotateX(180deg)</h4>
+        <div class="box box1"></div>
+        <div class="code-container">
+            <blockquote class="code">        .box1:hover{transform: rotateX(180deg);}
+            </blockquote>
+        </div>
+        <h4>rotateY(180deg)</h4>
+        <div class="box box2"></div>
+        <div class="code-container">
+            <blockquote class="code">        .box2:hover{transform:rotateY(180deg);}
+            </blockquote>
+        </div>
+        <h4>rotateZ(90deg)</h4>
+        <div class="box box3"></div>
+        <div class="code-container">
+            <blockquote class="code">        .box3:hover{transform: rotateZ(90deg);}
+            </blockquote>
+        </div>
+        <p>Side note: you can use the "all" attribute in transitions to transition <i>all</i> the attributes that can change. Rather than just the one.</p>
+</body>
+</html>

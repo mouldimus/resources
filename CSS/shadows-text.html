@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadows-text</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(#eee,#fff);
+        }
+        .shadowed-text{
+            text-shadow: 1px 2px 2px red;
+            font-size: 50px;
+        }
+        .box{
+            display: inline-block;
+            border: 1px solid #333;
+            background: red;
+            width: 8px;
+            height: 8px;
+            margin-left: 4px;
+        }
+        p.small-text{
+            font-size: 9px;
+        }
+        blockquote{
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 2px 50px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>shadows-text</h1>
+    <hr>
+    <h2 class="shadowed-text">Muahahahaha</h2>
+    <p>This text above <i>should</i> be shadowed.</p>
+    <p>Make sure to get your selector working.</p>
+    <blockquote>.shadowed-tex:{<br>1px&nbsp; 2px&nbsp; 2px &nbsp;<div class="box"></div> red;<br>}<p class="small-text">x-axis&nbsp;&nbsp;&nbsp;&nbsp; y-axis&nbsp;&nbsp;&nbsp; shadow &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color</p></blockquote>
+</body>
+</html>

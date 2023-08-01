@@ -1,0 +1,14 @@
+If you're ever stuck in the terminal emulator, and you're struggling to remember commands. 
+This is for you.
+
+apropos "what the command does"
+This is quite litterally the google of your commands.
+If you're ever like, "How do I do this again?", just type in a keyword after the apropos command, to list all commands with that keyword in they're description.
+
+man "CommandName"
+For when you're like, "What does this command do again?"
+It'll print out a user manual on the command.
+
+"CommandName" -h or "CommandName" --help
+Most commands normally have a quick help option coded into them somewhere.
+This'll just print out a quick how to guide for the command.

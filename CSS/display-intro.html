@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-intro</title>
+    <style>
+        /* This is how div's normally behave, as a block element. */
+        hr+div{
+            border:1px solid red;
+        }
+        div{
+            border:1px solid black;
+        }
+        /* But you can change elements to act any kind of element.
+        Here's a div, normally a block elemtn acting 
+        like an inline-flex element */
+        div>div.inline-div{
+            border: 1px solid blue;
+            display:inline-flex;
+        }
+        /* And visa-versa */
+        div+span.block-span{
+            border: red solid 1px;
+            display: block;
+        }
+        span{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>display-intro</h1>
+    <hr>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, recusandae?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti distinctio et quos repellat! Quia iste in mollitia laborum obcaecati. Tempore, impedit recusandae ipsa officiis blanditiis voluptatem a rem hic, molestias iusto eligendi beatae unde laboriosam? Asperiores accusantium incidunt repellendus! Obcaecati, iusto? Exercitationem sed dolores error nisi fugit quo doloremque tenetur.
+        <div class="inline-div">Lorem ipsum dolor sit amet.</div>
+    </div>
+    <span class="block-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. A distinctio possimus maiores rerum debitis molestiae, natus fugit quam, reprehenderit doloribus officiis iusto, delectus assumenda? Nihil dolorum ab enim ipsa aspernatur quaerat maiores libero, recusandae esse. Repudiandae enim obcaecati accusamus quos, ullam iste quibusdam, asperiores, eligendi distinctio explicabo laudantium officia aut.</span>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, cupiditate.</span>
+    <span>Lorem ipsum dolor sit amet.</span>
+</body>
+</html>

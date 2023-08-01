@@ -1,0 +1,22 @@
+the command mv can move files from one directory to another
+for example
+
+mv 123.txt text_files
+
+would move the file "123.text" to the directory text_files
+
+however if there is already a file in that directory with the same the old one will be replaced without warning.
+
+-n does the opposite of the default. it does NOT overwrite the file in the folder
+
+to stop this you can use the -i flags to ask you to confirm before you still want to move the file if it'll overwrite the one already in the folder
+
+. = your current directory
+.. = your parent directory
+
+You can also rename files/folders using the mv command too, by simply specifing the file/folder name you want to rename and renaming it
+
+for example
+mv 123.txt 1234.text
+
+would change the file "123.txt" to "1234.txt"

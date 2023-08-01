@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+</head>
+<body>
+    <h1 id="header"></h1>
+    <hr>
+    
+
+    <script>
+
+        //tipping calculator function
+        function tip(bill,perc = 0.2){//parameters and default tipping percentage set here
+
+            var bill = Number(bill)//sum of the bill
+            var perc = Number(perc)//percentage of the bill you'd like to tip
+
+            if(!bill && !perc){
+                return "Not a number";//if either are not a number or they are 0
+
+            }else if(perc < 1){
+                return bill * perc;//if perc para is less than one do not change percent formatting
+                
+            }else{
+                return bill * (perc / 100);//if perc para is more than one change percent to decimal
+            }
+        }
+
+
+
+        console.log(tip(115,30))
+        console.log(tip(115,0.3))
+        console.log(tip("tips",30))
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

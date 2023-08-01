@@ -1,0 +1,20 @@
+.centerpiece{
+  
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 1%;
+    padding-bottom: 75%;
+    background-color: aliceblue;
+
+}
+body{
+
+    background-color: navy;
+    align-content: center;
+}
+h1{
+    text-align: center;
+    margin-right: 25%;
+    color: black;
+}

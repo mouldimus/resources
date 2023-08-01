@@ -1,0 +1,8 @@
+copying files is really simple
+we can even use the -R flag to recursively copy all the files within a folder too
+
+for example
+
+cp -r file-or-folder-name ~/Documents/personal/coding
+
+would copy the file/folder "file-or-folder-name" and all of its contents to the coding directory

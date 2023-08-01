@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stringManipulation</title>
+  </head>
+  <body>
+    <h1>stringManipulation</h1>
+    <hr />
+    <p id="sentenceNode">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officia cum quod molestiae tempore velit dolorem eum praesentium, delectus ea adipisci id laboriosam magnam quasi, ut esse. Commodi, obcaecati dicta?</p>
+
+    <script>
+      var sentenceNode = document.getElementById("sentenceNode");
+      var sentence = sentenceNode.innerHTML;
+      // change a strings to case
+      var sentenceUppercase = sentence.toUpperCase();
+      var sentenceLowercase = sentence.toLowerCase();
+      // select an area of a string
+      var getFirstEleven = sentence.substr(0, 11);
+      var firstElevenCaps = getFirstEleven.toUpperCase();
+      var firstElevenLower = getFirstEleven.toLocaleLowerCase();
+      // create an array
+      var words = sentence.split(" ");
+      var bracketWords = "(" + words.join(")(") + ")";
+
+      sentenceNode.innerText = bracketWords;
+
+      // for reference the splice cut it at the end of word 5
+      var wordsFromTheEndOf5Plus9 = words.splice(5,9);
+      var bracketWordsFromTheEndOf5Plus9 = "(" + wordsFromTheEndOf5Plus9.join(")(") + ")";
+
+      sentenceNode.innerText = bracketWordsFromTheEndOf5Plus9
+
+      sentenceNode.innerText = wordsFromTheEndOf5Plus9.join(" ");
+
+       
+
+
+
+
+
+
+
+
+
+   
+      //   typeof sentence
+      //   "string"
+      //   You can use this command in the console to find out what type a variable is
+      //   Or you just type in the variable name
+      //   sentence
+      //   "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia officia cum quod molestiae tempore velit dolorem eum praesentium, delectus ea adipisci id laboriosam magnam quasi, ut esse. Commodi, obcaecati dicta?"
+      //   Because this /\ is surrounded by "" this means it's a string
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+<body>
+    <style>
+        th{
+            text-align: left;
+        }
+        td{
+            border: red 1px solid;
+        }
+    </style>
+    <h1>Tables</h1>
+    <h2>Colour table</h2>
+    <table style="border: green 1px solid;" width="100%">
+        <thead>
+            <tr>
+            <th>Colour</th>
+            <th>Sub Colour</th>
+            <th>Hex value</th>
+            <th>RGB value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Blue</td>
+                <td>Navy</td>
+                <td>#na</td>
+                <td>no idea</td>
+            </tr>
+            <tr>
+                <td>Baby Blue</td>
+                <td>#123</td>
+                <td>fdgdf</td>
+            </tr>            
+            <tr>
+                <td>Ocean blue</td>
+                <td>#kaaaa</td>
+                <td>1234</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Colour</th>
+                <th>Sub Colour</th>
+                <th>Hex Value</th>
+                <th>RGB</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr style="border: black 2px solid;">
+    <h2>Test table</h2>
+    <table style="border: green 1px solid;" width="100%">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mr</td>
+                <td>Thomas</td>
+                <td>Hayward</td>
+                <td rowspan="2">2</td>
+            </tr>
+            <tr>
+                <td>Mr</td>
+                <td>Charlie</td>
+                <td>Nevitt</td>
+            </tr>
+            <tr>
+                <td>Mrs</td>
+                <td>Holly</td>
+                <td>Hayward</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mr</td>
+                <td>David</td>
+                <td>Hayward</td>
+                <td>3</td>
+            </tr>    
+            <tr>
+                <td>Ms</td>
+                <td>Rose</td>
+                <td>Falconbridge</td>
+                <td>5</td>
+            </tr> 
+            <tr>
+                <td>Ms</td>
+                <td colspan="2">Eva Van Leeuwen</td>
+                <td>8</td>
+            </tr>                                            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Title</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Quantity</th>
+            </tr>
+        </tfoot>
+        </table>
+</body>
+</html>

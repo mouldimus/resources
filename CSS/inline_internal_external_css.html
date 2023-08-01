@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal & External CSS</title>
+
+    <!-- This is an example of External CSS, 
+    because rather than having it INTERNALLY on the html document, 
+    I'm storing it seperately, which also means I can use the 
+    same stylesheet for multiple html documents.
+    This is best practice in most cases. -->
+    <link rel="stylesheet" href="style.css">
+
+    This would be an example of Internal CSS,
+     because it's being stored inside(internally) the html document.
+    This would generally be used on a one page website, 
+    as they wouldn't need to reference it on other sites.
+    <style>
+        h3{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Inline CSS is where you style the html element individually.
+    Used quite often on bits of code that need unique styling. -->
+<h1 style="border: 1px solid red; background-color: aqua;">Inline CSS, Internal CSS & External CSS. </h1>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatibus magnam vero beatae enim vel provident maxime quas officia, eaque laudantium odio itaque doloribus temporibus in deleniti quo aspernatur corrupti.</h1>
+<h3>What's the bloody diference?</h3>
+
+</body>
+</html>

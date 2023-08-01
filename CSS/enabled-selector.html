@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enabled-selector</title>
+    <style>
+
+        input:not([type="checkbox"]),label:not([for="question"]){
+            display:inline-block;
+            width: 40%;
+            padding: 5px;
+            margin: 0px 2px;
+        }
+        input:not([type="checkbox"]){
+            display: block;
+            width: 100%;
+        }
+        input:enabled{
+                opacity: 0.5;
+        }    
+</style>
+
+</head>
+<body>
+    <h1>enabled-selector</h1>
+    <hr>
+    <p>The enabled psuedo selector can be used for to style enabled elements.
+        Like for example on a lot of ecommerce websites, it's quite common that the billing address is disabled unless it's different to the shipping address.
+    </p>
+    <form action="get">
+        
+        <h3>Shipping Address</h3>
+<div>
+    <label for="firstName">First Name
+        <input type="text" name="" id="firstName">
+    </label>
+    
+    <label for="lastName">Last Name
+        <input type="text" name="" id="lastName">
+    </label>
+</div>
+<div>
+    <label for="email">Email Address
+        <input type="email" name="" id="email">
+    </label>
+</div>
+<div>
+    <label for="company">Company
+        <input type="text" name="" id="company">
+    </label>
+    
+    <label for="townCity">Town/City
+        <input type="text" name="" id="townCity">
+    </label>
+</div>    
+<div>
+    <label for="addressLineOne">Address line 1
+        <input type="text" name="" id="addressLineOne">
+    </label>
+    
+    <label for="addressLineTwo">Address line 2
+        <input type="text" name="" id="addressLineTwo">
+    </label>
+</div>
+
+<div>
+    <label for="county">County
+        <input type="text" name="" id="county">
+    </label>
+    
+    <label for="postcode">Postcode
+        <input type="text" name="" id="postcode">
+    </label>
+</div>
+
+
+
+<input type="checkbox" name="" id="question">
+<label for="question">Billing address same as shipping address.</label>
+
+<h3>Billing Address</h3>
+<div>
+<label for="firstName">First Name
+    <input enabled type="text" name="" id="firstName">
+</label>
+
+<label for="lastName">Last Name
+    <input enabled type="text" name="" id="lastName">
+</label>
+</div>
+<div>
+<label for="email">Email Address
+    <input enabled type="email" name="" id="email">
+</label>
+</div>
+<div>
+<label for="company">Company
+    <input enabled type="text" name="" id="company">
+</label>
+
+<label for="townCity">Town/City
+    <input enabled type="text" name="" id="townCity">
+</label>
+</div>    
+<div>
+<label for="addressLineOne">Address line 1
+    <input enabled type="text" name="" id="addressLineOne">
+</label>
+
+<label for="addressLineTwo">Address line 2
+    <input enabled type="text" name="" id="addressLineTwo">
+</label>
+</div>
+
+<div>
+<label for="county">County
+    <input enabled type="text" name="" id="county">
+</label>
+
+<label for="postcode">Postcode
+    <input enabled type="text" name="" id="postcode">
+</label>
+</div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity-vs-alpha</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            display: inline-block;
+            text-align: center; 
+            background-color: #000;
+            color: #fff;
+        }
+        .alpha{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .opacity{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>opacity-vs-alpha</h1>
+    <hr>
+    <div class="box alpha">alpha</div>
+    <div class="box opacity">opacity</div>
+    <p>So the between the two is that opacity does <i>everything</i> inside the element, but alpha only changes the selected <i> attribute.</i></p>
+</body>
+</html>

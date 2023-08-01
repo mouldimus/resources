@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+</head>
+<body>
+    <h1 id="header"></h1>
+    <hr>
+        <div class="container" style="margin: 10px;">
+            <label for="bill" style="margin-right: 50px;">Bill  (£)</label>
+            <input type="number" name="bill" id="bill" placeholder="ie 119.95">
+        </div>
+        <div class="container" style="margin: 10px;">
+            <label for="tip" style="margin-right: 50px;">Tip  (%)</label>
+            <input type="number" name="tip" id="tip" placeholder="ie 10" min="0" max="100">
+        </div>
+        <button type="button" style="margin: 10px;" onclick="calculateTip()">Calculate Tip</button>
+        <div class="container">
+            <div id="billAmount"></div>
+            <div id="tipAmount"></div>
+        </div>
+
+    <script>
+        
+        
+        
+        function calculateTip(bill,tip){
+            var bill = document.getElementById("bill").value;
+            var billAsNumber = Number(bill);
+            console.log(billAsNumber);
+
+            var tip = document.getElementById("tip").value;
+            var tipAsNumber = Number(tip);
+            console.log(tipAsNumber);
+
+            var billAmount = document.getElementById("billAmount");
+            var tipAmount = document.getElementById("tipAmount");
+
+                var billAns = billAsNumber * (tipAsNumber / 100 + 1)
+                var tipAns = billAsNumber * (tipAsNumber / 100)
+                
+                billAmount.innerText = "Bill total: £" + billAns.toFixed(2)
+                tipAmount.innerText = "Tip total: £" + tipAns.toFixed(2)
+                
+        }
+        
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

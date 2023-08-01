@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="roboto.css" />
+    <title>animation-first</title>
+    <style>
+      .box {
+        width: 15px;
+        height: 15px;
+        background: #000;
+        margin: 0 auto;
+        animation: boxHover 4s;
+      }
+      @keyframes boxHover {
+        0% {
+          width: 15px;
+          height: 15px;
+          background: #000;
+        }
+        25% {
+          transform: rotateZ(180deg);
+          background: red;
+        }
+        50% {
+          width: 150px;
+          height: 150px;
+          background: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>animation-first</h1>
+    <hr />
+    <div class="container">
+      <div class="box"></div>
+    </div>
+    <div class="code-container">
+      <h3>Example</h3>
+      <blockquote class="code">
+        .box {<br />
+        width: 15px;<br />
+        height: 15px;<br />
+        background: #000;<br />
+        margin: 0 auto;<br />
+        animation: boxHover 4s;<br />
+        }<br /><br />
+        @keyframes boxHover {<br /><br />
+        0% {<br />
+        width: 15px;<br />
+        height: 15px;<br />
+        background: #000;<br />
+        }<br />
+        25% {<br />
+        transform: rotateZ(180deg);<br />
+        background: red;<br />
+        }<br />
+        50% {<br />
+        width: 150px;<br />
+        height: 150px;<br />
+        background: red;<br />
+        }<br /><br />
+        }<br />
+      </blockquote>
+    </div>
+  </body>
+</html>

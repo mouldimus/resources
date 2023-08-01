@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="roboto.css" />
+    <title>PHP-syntax</title>
+  </head>
+  <body>
+    <h1>PHP-syntax</h1>
+    <hr />
+    <h2>Opening up PHP</h2>
+    <p>PHP-syntax must be opened with a &lt;?php and closed with a ?&gt;</p>
+    <div class="code-container">
+      <h3>Long-hand, but more accepted</h3>
+      <blockquote class="code">
+        &lt;?php<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// code in here<br />?>
+      </blockquote>
+    </div>
+    <div class="code-container">
+      <h3>Short-hand</h3>
+      <blockquote class="code">
+        &lt;?<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// code in here<br />?>
+      </blockquote>
+    </div>
+    <h2>echo & strings</h2>
+    <p>
+      Now that we know how to open our php tags, it's time to write our first
+      bit of php code.
+    </p>
+    <p>
+      In PHP, when we want to write anything in the server we can use the
+      <b>echo</b> construct. This is not a function, even though it can be
+      written as one.
+    </p>
+    <p>
+      Now because this is a string we had to wrap it in "quotation marks" this
+      tell the server this is just text, don't do anything fancy with it.
+    </p>
+    <div class="code-container">
+      <h3></h3>
+      <blockquote class="code">
+        &lt;?php<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Hello World";<br />?>
+      </blockquote>
+    </div>
+    <p>
+      One of the great features about PHP is you can put it anywhere in your
+      HTML, and that'll be where it's placed.
+    </p>
+    <h2>Semicolons</h2>
+    <p>When you I use them?</p>
+    <ul>
+      <li>After every single line</li>
+      <li>After every single statement</li>
+    </ul>
+    <p>
+      JavaScript and jQuery are quite forgiving when it comes to Semicolons, but
+      PHP is not. If you forget a single semicolon your code will not work.
+    </p>
+  </body>
+</html>

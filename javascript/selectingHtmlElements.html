@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>selectingHtmlElements</title>
+  </head>
+  <body>
+    <h1 id="test">selectingHtmlElements</h1>
+    <hr />
+    <p>Using the <b>document.getElementById</b>, we can select the HTML element with the ID tag "test", using JavaScript.</p>
+    <p>Essentially we're saying to the JavaScript, hey in this <b>document</b> there's an <b>element</b> with the <b>Id</b> "test" can you <b>get</b> it for us.</b></b></p>
+    <p>Once we then have the element, we can assign it as a variable and start using JavaScript to modify it.</p>
+    <p>And <i>trust me</i> there's alot more ways of modifying stuff in JavaScript.</p>
+<br>
+<br>
+    <p><b>Side note:</b> if you're just changing the inner text of the HTML element, use .innerText instead of .innerHTML as the browser doesn't have to waste time rendering HTML.</p>
+<br>
+<br>
+    <div class="js">
+      <br>
+      <br>
+      var test = document.getElementById("test");<br>
+      <br>
+      <br>
+        //This is a way of modifying the HTML inside an element <br>
+      test.innerHTML = "&lt;u&gt;selecting&lt;/u&gt;HtmlElements";<br>
+      <br>
+      <br>  
+    </div>
+    <script>
+        
+      var test = document.getElementById("test");
+
+
+        //This is a way of modifying the HTML inside an element
+      test.innerHTML = "<u>selecting</u>HtmlElements";
+
+    </script>
+  </body>
+</html>

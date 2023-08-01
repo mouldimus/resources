@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-variables</title>
+    <style>
+        :root{
+            --font-family: "arial";
+            --green: #00ff00;
+        }
+        body{
+            font-family: var(--font-family);
+        }
+        .mono{
+            font-family: monospace;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        thead{
+            font-weight: bold;
+        }
+        .italic{
+            font-style: italic;
+        }
+        table{
+            margin: 10px auto;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td{
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 15px;
+
+        }
+        hr{
+            color: #ccc;
+            border-style: solid;
+            border-width: 0.5px;
+        }
+        .code{
+            color: var(--green);
+            background-color: black;
+            border-left: 10px var(--green) solid;
+            border-radius: 10px 0 0 10px;
+        }
+        .container{
+            padding: 10px 10px 10px 20px;
+            background-color: #cccccf;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>css-variables</h1>
+    <hr>
+     <p>Variables are great. They're a way of essentially setting a class <i>inside</i> CSS.</p>
+     <p>
+        The var() function is used to insert the value of a CSS variable.</p>
+        
+        <p>
+        CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.
+        </p>
+        <p>
+        A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.</p>
+     <h2>Syntax</h2>
+     <p>The var() function is used to insert the value of a CSS variable.
+
+        <br>The syntax of the var() function is as follows:</p>
+        <div class="mono">var(<i>--name, value</i>)</div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tr>
+                <td class="italic">name</td>
+                <td>Required. The variable name (must start with two dashes)</td>
+            </tr>
+            <tr>
+                <td class="italic">value</td>
+                <td>Optional. The fallback value (used if the variable is not found)</td>
+            </tr>
+        </table>
+        <p>
+            <b>Note:</b> The variable name must begin with two dashes (--) and it is case sensitive!
+        </p>
+        <h2>How var() Works</h2>
+        <p>First of all: CSS variables can have a global or local scope.
+        </p>
+        
+        <p>
+            Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.
+        </p>
+        <p>
+            
+            To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element.
+        </p>
+            
+        <p>
+            To create a variable with local scope, declare it inside the selector that is going to use it.
+        </p>
+        <p>
+            
+            The following example is equal to the example above, but here we use the var() function.
+        </p>
+        
+        <p>
+            First, we declare two global variables (--blue and --white). Then, we use the var() function to insert the value of the variables later in the style sheet:
+            
+            </p>
+            <div class="container">
+                <h3>Example</h3>
+                <blockquote class="mono code">
+                    :root {<br>
+                        --blue: #1e90ff;
+                        --white: #ffffff;<br>
+                    } <br>
+                    <br>
+                    body { background-color: var(--blue); } <br>
+                    <br>
+                    h2 { border-bottom: 2px solid var(--blue); }<br>
+                    <br>
+                    .container {<br>
+                        color: var(--blue);<br>
+                        background-color: var(--white);<br>
+                        padding: 15px;<br>
+                    }<br>
+                    <br>
+                    button {<br>
+                        background-color: var(--white);<br>
+                        color: var(--blue);<br>
+                        border: 1px solid var(--blue);<br>
+                        padding: 5px;<br>
+                    }<br>
+                </blockquote>
+ </div>
+</body>
+</html>
